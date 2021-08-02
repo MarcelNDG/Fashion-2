@@ -10,8 +10,12 @@ const TopNav = () => {
                     <li>Home</li>
                     <li>Home</li>
                     <li>Home</li>
-                </ul>            
-                <Logo className='hmbgIcon'/>
+                </ul>
+
+                <button>
+                    <Logo className='hmbgIcon'/>    
+                </button>           
+                
             </div>
         </div>
     )

@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 *{
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.App{
+  display: grid;
+  grid-gap: 0.4rem;
+  height: 100vh;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-areas: 
+  "header header" 
+  "main main" 
+  "footer footer";
+}
+
+header{
+  grid-area: header;
+}
+
+header button{
+  background-color: transparent;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+
+}
+
 .topNav{
   display: flex;
+  height: 4rem;
   background-color: #7fffd4;
-  height: 5rem;
+  
 }
 
 .topNavContainer{
@@ -25,33 +55,54 @@ main{
   display: flex;
   position: relative;
   justify-content: center;
-  text-align: center;
-  height: 68vh;
+  align-items: center;
+  text-align: left;
+  
+  grid-area: main;
 }
 
 .modelPic{
   position: absolute;
-  z-index: 1;  
   margin-left: auto;
   margin-right: auto;
-  width: 10rem;
-  
+  width: 22rem;
+  opacity: 0.4;
+
+  bottom: 0;
+
+  z-index: 1;  
+}
+
+.logo{  
+  position: relative;
+  text-align: left;
+  font-size: 3.8rem;
+  z-index: 10;  
+  line-height: 0.9;
 }
 
 .logo{
-  
-  position: relative;
-  z-index: 10;
+  font-weight: lighter;
+}
+
+.logo span{
+  font-weight: 800;
 }
 
 /*-- footer --*/
+footer{
+  grid-area: footer;
+}
+
 .footer{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: aquamarine;
+  
 }
-/*s
+
+/*
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -61,6 +112,16 @@ main{
   }
 }
 */
+
+@media (max-width: 320px){
+  
+  
+}
+
+@media (max-width: 480px){
+  
+  
+}
 
 @media (max-width: 720px){
   .topNavContainer ul{

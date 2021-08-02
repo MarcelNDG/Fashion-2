@@ -1,7 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
 .topNav{
   display: flex;
-  background-color: aquamarine;
-  height: 6rem;
+  background-color: #7fffd4;
+  height: 5rem;
 }
 
 .topNavContainer{
@@ -11,9 +15,42 @@
 
 .hmbgIcon{
   padding: 0 2rem 0 0;
-  width: 3rem;
+  width: 4.6rem;
 }
 
+
+/*-- Main --*/
+
+main{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  height: 68vh;
+}
+
+.modelPic{
+  position: absolute;
+  z-index: 1;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
+  
+}
+
+.logo{
+  
+  position: relative;
+  z-index: 10;
+}
+
+/*-- footer --*/
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
 /*s
 @keyframes App-logo-spin {
   from {

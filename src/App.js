@@ -20,11 +20,11 @@ function App() {
      </header>
      <main>
       <h1 className='logo'>FASHION <br></br><span>FASCINATION</span></h1>      
-      <img className='modelPic' src={Model} alt="Model" />
      </main>
      <footer>
        <Footer />
      </footer>
+      <img className='modelPic' src={Model} alt="Model" />
     </div>
   );
 }

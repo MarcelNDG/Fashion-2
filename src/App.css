@@ -41,8 +41,8 @@ header button{
   margin-left: auto;
 }
 
-.topNavContainer ul{
-  display: none;
+.topNavContainer ul {
+  display: none;  
 }
 
 .hmbgIcon{
@@ -105,10 +105,12 @@ footer{
 
 
 /* --- MEDIA QUERIES --- */
-@media (min-width: 320px){
+/*
+ @media (min-width: 320px){
   
   
 }
+*/
 
 @media (min-width: 480px){
   
@@ -152,9 +154,40 @@ footer{
 }
 
 @media (min-width: 720px){
-  .topNavContainer ul{
-    display: block;
+  .hmbgIcon{
+    display: none;
   }
+
+  .topNavContainer{
+    align-items: center;
+  }
+
+  .topNavContainer > ul{
+    display: flex;
+    list-style: none;
+    padding-right: 2rem;
+    
+  }
+
+  .topNavContainer > ul > li > button{
+    list-style: none;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+main{
+  
+}
+ 
+  
+}
+
+
+
+
+@media (min-width: 1080px){
+  
 }
 
 

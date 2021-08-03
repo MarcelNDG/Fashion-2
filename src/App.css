@@ -28,19 +28,21 @@ header button{
   overflow: hidden;
   border: none;
   cursor: pointer;
-
 }
 
 .topNav{
   display: flex;
   height: 4rem;
-  background-color: #7fffd4;
-  
+  background-color: #7fffd4;  
 }
 
 .topNavContainer{
   display: flex;
   margin-left: auto;
+}
+
+.topNavContainer ul{
+  display: none;
 }
 
 .hmbgIcon{
@@ -50,13 +52,12 @@ header button{
 
 
 /*-- Main --*/
-
 main{
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   
   grid-area: main;
 }
@@ -69,7 +70,7 @@ main{
   opacity: 0.4;
 
   bottom: 0;
-
+  
   z-index: 1;  
 }
 
@@ -102,6 +103,61 @@ footer{
   
 }
 
+
+/* --- MEDIA QUERIES --- */
+@media (min-width: 320px){
+  
+  
+}
+
+@media (min-width: 480px){
+  
+  main{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding-left: 3rem;
+    grid-area: main;
+  }
+  
+  .modelPic{
+    position: absolute;
+    right: 0;
+    width: 26rem;
+    opacity: 0.4;
+  
+    bottom: 0;
+  
+    z-index: 1;  
+  }
+  
+  .logo{  
+    position: static;
+    text-align: left;
+    font-size: 4.2rem;
+    z-index: 10;  
+    line-height: 0.9;
+  }
+  
+  .logo{
+    font-weight: lighter;
+  }
+  
+  .logo span{
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 720px){
+  .topNavContainer ul{
+    display: block;
+  }
+}
+
+
 /*
 @keyframes App-logo-spin {
   from {
@@ -112,19 +168,3 @@ footer{
   }
 }
 */
-
-@media (max-width: 320px){
-  
-  
-}
-
-@media (max-width: 480px){
-  
-  
-}
-
-@media (max-width: 720px){
-  .topNavContainer ul{
-    display: none;
-  }
-}

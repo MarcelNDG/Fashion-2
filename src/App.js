@@ -24,7 +24,9 @@ function App() {
      <footer>
        <Footer />
      </footer>
+     <div className="image-container">
       <img className='modelPic' src={Model} alt="Model" />
+     </div>      
     </div>
   );
 }

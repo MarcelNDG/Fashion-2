@@ -10,10 +10,11 @@ body{
 
 .App{
   display: grid;
+  position: relative;
   grid-gap: 0.4rem;
   height: 100vh;
   grid-template-rows: 0.1fr 1fr 0.1fr;
-  grid-template-areas: 
+  grid-template-areas :    
   "header header" 
   "main main" 
   "footer footer";
@@ -62,14 +63,21 @@ main{
   grid-area: main;
 }
 
-.modelPic{
+.image-container{
+  display: flex;
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.modelPic{
+  position: absolute;  
   width: 22rem;
   opacity: 0.4;
-
   bottom: 0;
+  margin-left: auto;
   
   z-index: 1;  
 }
@@ -93,6 +101,7 @@ main{
 /*-- footer --*/
 footer{
   grid-area: footer;
+  z-index: 2;
 }
 
 .footer{
@@ -154,6 +163,7 @@ footer{
 }
 
 @media (min-width: 720px){
+
   .hmbgIcon{
     display: none;
   }
@@ -176,9 +186,11 @@ footer{
     margin-left: 1rem;
   }
 
-main{
+ .modelPic{
   
-}
+  width: 30rem;  
+   opacity: 1;
+ }
  
   
 }
@@ -187,6 +199,8 @@ main{
 
 
 @media (min-width: 1080px){
+
+  
   
 }
 

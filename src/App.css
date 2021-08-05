@@ -10,9 +10,9 @@ body{
 
 .App{
   display: grid;
-  position: relative;
+  
   grid-gap: 0.4rem;
-  height: 100vh;
+  height: 100vh;  
   grid-template-rows: 0.1fr 1fr 0.1fr;
   grid-template-areas :    
   "header header" 
@@ -55,12 +55,15 @@ header button{
 /*-- Main --*/
 main{
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100vw;
   
   grid-area: main;
+  
 }
 
 .image-container{
@@ -70,22 +73,23 @@ main{
   height: 100vh;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .modelPic{
   position: absolute;  
-  width: 22rem;
+  width: 20rem;
   opacity: 0.4;
   bottom: 0;
-  margin-left: auto;
+  margin-left: -50px;
   
-  z-index: 1;  
+  z-index: 0;  
 }
 
 .logo{  
   position: relative;
   text-align: left;
-  font-size: 3.8rem;
+  font-size: 3rem;
   z-index: 10;  
   line-height: 0.9;
 }
@@ -114,23 +118,28 @@ footer{
 
 
 /* --- MEDIA QUERIES --- */
-/*
+
  @media (min-width: 320px){
-  
+
+  .logo{
+    font-size: 3.8rem;
+  }
+
+  .modelPic{
+    width: 22rem;
+    margin-left: 0;
+  }
   
 }
-*/
+
 
 @media (min-width: 480px){
   
   main{
-    display: flex;
-    flex-direction: row;
+    display: flex;   
     position: relative;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    padding-left: 3rem;
+    
+    
     grid-area: main;
   }
   
@@ -186,6 +195,10 @@ footer{
     margin-left: 1rem;
   }
 
+  .logo{
+    font-size: 5rem;
+  }
+
  .modelPic{
   
   width: 30rem;  
@@ -200,7 +213,9 @@ footer{
 
 @media (min-width: 1080px){
 
-  
+  main{
+    background-color: tomato;
+  }
   
 }
 

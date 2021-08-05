@@ -66,6 +66,25 @@ main{
   
 }
 
+
+
+.logo{  
+  position: relative;
+  text-align: left;
+  font-size: 3rem;
+  z-index: 10;  
+  line-height: 0.9;
+}
+
+.logo{
+  font-weight: lighter;
+}
+
+.logo span{
+  font-weight: 800;
+}
+
+/* --- Image --- */
 .image-container{
   display: flex;
   position: absolute;
@@ -84,22 +103,6 @@ main{
   margin-left: -50px;
   
   z-index: 0;  
-}
-
-.logo{  
-  position: relative;
-  text-align: left;
-  font-size: 3rem;
-  z-index: 10;  
-  line-height: 0.9;
-}
-
-.logo{
-  font-weight: lighter;
-}
-
-.logo span{
-  font-weight: 800;
 }
 
 /*-- footer --*/
@@ -121,10 +124,12 @@ footer{
 
  @media (min-width: 320px){
 
+  /* --- Main --- */
   .logo{
     font-size: 3.8rem;
   }
 
+  /* --- Image --- */
   .modelPic{
     width: 22rem;
     margin-left: 0;
@@ -135,24 +140,14 @@ footer{
 
 @media (min-width: 480px){
   
+  /* --- Main --- */
   main{
     display: flex;   
     position: relative;
     
     
     grid-area: main;
-  }
-  
-  .modelPic{
-    position: absolute;
-    right: 0;
-    width: 26rem;
-    opacity: 0.4;
-  
-    bottom: 0;
-  
-    z-index: 1;  
-  }
+  } 
   
   .logo{  
     position: static;
@@ -169,10 +164,23 @@ footer{
   .logo span{
     font-weight: 800;
   }
+  
+  /* --- Image --- */
+  .modelPic{
+    position: absolute;
+    right: 0;
+    width: 26rem;
+    opacity: 0.4;
+  
+    bottom: 0;
+  
+    z-index: 1;  
+  }
 }
 
 @media (min-width: 720px){
 
+  /* --- Topnav --- */
   .hmbgIcon{
     display: none;
   }
@@ -195,10 +203,12 @@ footer{
     margin-left: 1rem;
   }
 
+  /* --- Main --- */
   .logo{
     font-size: 5rem;
   }
 
+  /* --- Image --- */
  .modelPic{
   
   width: 30rem;  
@@ -213,6 +223,7 @@ footer{
 
 @media (min-width: 1080px){
 
+  /* --- Main --- */
   main{
     background-color: tomato;
   }

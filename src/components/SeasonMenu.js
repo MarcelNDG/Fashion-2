@@ -2,11 +2,17 @@ import React from 'react'
 
 const SeasonMenu = () => {
     return(
-        <div>
+        <div className='seasonMenu'>
             <ul>
-                <li>Spring 2022</li>
-                <li>Summer 2022</li>
-                <li>Spring Sale</li>
+                <li>
+                    <button>Spring 2022</button>
+                </li>
+                <li>
+                    <button>Summer 2022</button>
+                </li>
+                <li>
+                    <button>Spring Sale</button>
+                </li>
             </ul>
         </div>
     )

@@ -22,8 +22,11 @@ function App() {
      </header>
      <main>
       <h1 className='logo'>FASHION <br></br><span>FASCINATION</span></h1>
-      <SeasonMenu />
-      <Searchbar />        
+      <div className='seasonSearchContainer'>
+        <SeasonMenu />
+        <Searchbar />
+      </div>
+              
      </main>
      <footer>
        <Footer />

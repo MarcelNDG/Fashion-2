@@ -83,13 +83,18 @@ main{
 }
 
 .searchbar{
+  position: absolute;
   border: #4ae2b0 3px solid;
   background-color: #adffe4;
-  border-radius: 20px;
-  opacity: 1;
-  z-index: 10;
   color: red;
+  border-radius: 20px;
+  width: 14rem;
+  height: 2.4rem;
+  opacity: 1;
   padding: 0.3rem 0.4rem;
+  bottom: 8rem;
+
+  z-index: 10;
 }
 
 /* --- Image --- */
@@ -100,15 +105,16 @@ main{
   height: 100vh;
   justify-content: center;
   align-items: center;
+
   z-index: 0;
 }
 
 .modelPic{
   position: absolute;  
-  width: 20rem;
+  width: 16rem;
   opacity: 0.4;
   bottom: 0;
-  margin-left: -50px;
+  margin-left: -25px;
   
   z-index: 0;  
 }
@@ -134,13 +140,14 @@ footer{
 
   /* --- Main --- */
   .logo{
-    font-size: 3.8rem;
+    font-size: 3.2rem;
   }
 
   /* --- Image --- */
   .modelPic{
-    width: 22rem;
+    width: 18rem;
     margin-left: 0;
+    z-index: 0;
   }
   
 }
@@ -180,8 +187,8 @@ footer{
 
   .modelPic{
     position: absolute;
-    right: 0;
-    width: 26rem;
+    right: 2rem;
+    width: 20rem;
     opacity: 0.4;
   
     bottom: 0;
@@ -223,7 +230,7 @@ footer{
   /* --- Image --- */
  .modelPic{
   
-  width: 30rem;  
+  width: 20rem;  
    opacity: 1;
  }
  
@@ -239,6 +246,14 @@ footer{
   main{
     background-color: tomato;
   }
+  
+  /* --- Image --- */
+ .modelPic{
+  
+  width: 20rem;
+  right: 7rem;  
+  opacity: 1;
+ }
   
 }
 

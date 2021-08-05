@@ -5,6 +5,7 @@ import Model from './img/model.png'
 import TopNav from './components/TopNav'
 import Footer from './components/Footer'
 import Searchbar from './components/Searchbar'
+import SeasonMenu from './components/SeasonMenu'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
      </header>
      <main>
       <h1 className='logo'>FASHION <br></br><span>FASCINATION</span></h1>
+      <SeasonMenu />
       <Searchbar />        
      </main>
      <footer>

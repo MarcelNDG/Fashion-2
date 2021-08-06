@@ -72,7 +72,7 @@ main{
   font-weight: lighter;
   font-size: 3rem;
   line-height: 0.9;
-  bottom: 3.2rem;
+  bottom: 4.6rem;
   z-index: 10;  
   
 }
@@ -114,15 +114,13 @@ main{
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: bolder;
+  cursor: pointer;
   border: none;
   background-color: transparent;
-
- 
   
 }
 
-.searchbar{
-  
+.searchbar{  
   border: black 1px solid;
   background-color: #ffffff;
   color: red;
@@ -270,12 +268,23 @@ footer{
   }
 
   .seasonSearchContainer{
+    justify-content: left;
+    width: 40rem;
+    left: 4rem;
     flex-direction: row;
   }
 
+  .seasonMenu{
+    margin-right: 2rem;
+  }
+
+  .searchbar{
+    border-radius: 0px;
+    
+  }
+
   /* --- Image --- */
- .modelPic{
-  
+ .modelPic{  
   width: 20rem;  
    opacity: 1;
  }
@@ -292,10 +301,47 @@ footer{
   main{
     background-color: tomato;
   }
+
+  .logo{
+    left: 4rem;
+    font-size: 11rem;
+    bottom: 9rem;
+  }
+
+  .seasonSearchContainer{
+    width: 40rem;
+    bottom: 5rem;
+    justify-content: space-around;
+  }
+
+  .seasonMenu  ul  button{
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .seasonMenu  ul  button:hover{
+    font-weight: bold;
+    
+  }
+
+  .searchbar{
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px #000 solid;
+    border-left: none;  
+    background-color: transparent;
+    width: 24rem;
+    height: 2.6rem;
+    opacity: 1;
+    padding: 0.3rem 0.4rem;
+    bottom: 6.4rem;
+  
+    z-index: 10;
+  }
   
   /* --- Image --- */
- .modelPic{
-  
+ .modelPic{  
   width: 20rem;
   right: 7rem;  
   opacity: 1;

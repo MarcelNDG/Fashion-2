@@ -267,6 +267,18 @@ footer{
     margin-left: 1rem;
   }
 
+  .image-container{
+    position: absolute;
+    height: 80vh;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .btnList > li{
+    cursor: pointer;
+  }
+  
+
   /* --- Main --- */
   .logo{
     left: 4rem;
@@ -285,7 +297,7 @@ footer{
   }
 
   .searchbar{
-    border-radius: 0px;
+    border-radius: 20px;
     outline: none;   
     font-size: 1.4rem; 
   }
@@ -312,8 +324,7 @@ footer{
 
 @media (min-width: 1080px){
 
-  /* --- Main --- */
-  
+  /* --- Main --- */  
   .topNavContainer{
     display: flex;
     flex-direction: row;
@@ -337,6 +348,7 @@ footer{
     width: 16rem;
     
   }
+
   .seasonMenu  ul  button{
     font-weight: normal;
     font-size: 2rem;
@@ -347,21 +359,21 @@ footer{
     font-weight: bold;    
   }
 
-  .searchbar{
+  .searchbar{      
     border-top: none;
     border-right: none;
     border-bottom: 3px #000 solid;
-    border-left: none;  
     background-color: transparent;
+    border-left: none;
     width: 24rem;
     height: 2.6rem;
-    opacity: 1;
     padding: 0.3rem 0.4rem;
     bottom: 6.4rem;
-  
+    border-radius: 0px;
+    opacity: 1;
     z-index: 10;
   }
-  
+    
   /* --- Image --- */
   .modelPic{  
     width: 20rem;

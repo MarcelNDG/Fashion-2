@@ -2,7 +2,8 @@ import React from 'react'
 
 const SphereBig = () => {
     return(
-        <div className='SphereBig'></div>
+        
+        <div className='sphereBig'></div>
     )
 }
 

@@ -6,6 +6,7 @@ import TopNav from './components/TopNav'
 import Footer from './components/Footer'
 import Searchbar from './components/Searchbar'
 import SeasonMenu from './components/SeasonMenu'
+import SphereBig from './components/SphereBig'
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <SeasonMenu />
         <Searchbar />
       </div>
-              
+      <SphereBig />              
      </main>
      <footer>
        <Footer />

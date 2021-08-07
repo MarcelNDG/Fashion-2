@@ -46,6 +46,8 @@ header button{
   display: none;  
 }
 
+
+
 .hmbgIcon{
   padding: 0 2rem 0 0;
   width: 4.6rem;
@@ -109,7 +111,7 @@ main{
 
 .seasonMenu  ul  button{  
   font-size: 1.4rem;
-  line-height: 1.8rem;
+  line-height: 1.8rem;  
   font-weight: bolder;
   cursor: pointer;
   border: none;
@@ -283,8 +285,11 @@ footer{
   }
 
   .searchbar{
-    border-radius: 0px;    
+    border-radius: 0px;
+    outline: none;   
+    font-size: 1.4rem; 
   }
+  
 
   /* --- Image --- */
   .modelPic{  
@@ -304,9 +309,6 @@ footer{
   }  
   
 }
-
-
-
 
 @media (min-width: 1080px){
 
@@ -331,6 +333,10 @@ footer{
     justify-content: space-around;
   }
 
+  .seasonMenu  ul {
+    width: 16rem;
+    
+  }
   .seasonMenu  ul  button{
     font-weight: normal;
     font-size: 2rem;

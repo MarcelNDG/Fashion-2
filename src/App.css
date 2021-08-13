@@ -32,6 +32,17 @@ header button{
   cursor: pointer;
 }
 
+.topLogo{
+  font-weight: lighter;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  
+}
+.topLogo span{
+  font-weight: bold;
+}
+
 .navLink{
   background-color: transparent;
   overflow: hidden;
@@ -41,8 +52,12 @@ header button{
 
 .topNav{
   display: flex;
-  height: 4rem;  
+  align-items: center;
+  color: #000;
+  height: 4rem; 
+  padding: 0.4rem 1.4rem; 
 }
+
 
 .topNavContainer{
   display: flex;
@@ -52,8 +67,6 @@ header button{
 .topNavContainer ul {
   display: none;  
 }
-
-
 
 .hmbgIcon{
   padding: 0 2rem 0 0;
@@ -143,9 +156,10 @@ main{
   display: flex;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
+  bottom:0;
 
   z-index: 0;
 }
@@ -162,8 +176,7 @@ main{
 
 .sphereBig{
   position: absolute;
-  display: none;
-  
+  display: none;  
 
   z-index: 0;
  
@@ -260,12 +273,14 @@ footer{
 
   .topNavContainer{
     align-items: center;
+    padding-right: 2rem;
+    
   }
 
   .topNavContainer > ul{
     display: flex;
     list-style: none;
-    padding-right: 2rem;    
+       
   }
 
   .topNavContainer > ul > li > button{
@@ -286,6 +301,9 @@ footer{
     cursor: pointer;
   }
   
+  .topNavContainer > button{
+    display: none;
+  }
 
   /* --- Main --- */
   .logo{
@@ -336,8 +354,8 @@ footer{
   .topNavContainer{
     display: flex;
     flex-direction: row;
-    width: 30rem;
-    justify-content: space-between;
+    width: 22rem;
+    justify-content: space-around;
   }
 
   .logo{

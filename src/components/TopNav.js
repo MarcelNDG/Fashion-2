@@ -2,24 +2,28 @@ import { ReactComponent as Logo } from '../icon/hmbg-round.svg'
 import { Link } from 'react-router-dom'
 
 import React from 'react'
+import TopLogo from './TopLogo'
+
+
 
 const TopNav = () => {
     return(
     <header>
         <div className='topNav'>
+            <TopLogo />
             <div className='topNavContainer'>
                 <ul className='btnList'>
                     <li>
                         <Link to='/about' className='navLink'>About</Link>
                     </li>
                     <li>
-                        <button>Sale</button>
+                        <Link to='/sale' className='navLink'>Sale</Link>
                     </li>
                     <li>
                         <button>Stores</button>
                     </li>
                     <li>
-                        <button>Contact</button>
+                    <Link to='/contact' className='navLink'>Sale</Link>
                     </li>
                 </ul>
                 

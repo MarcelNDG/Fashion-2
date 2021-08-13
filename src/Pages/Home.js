@@ -11,8 +11,11 @@ import Footer from '../components/Footer'
 
 const Home = () => {
     return (
-    <>             
-            <TopNav />             
+    <>     
+        <header>
+            <TopNav />    
+        </header>      
+                         
         
         <main>
             <h1 className='logo'>FASHION <br></br><span>FASCINATION</span></h1>

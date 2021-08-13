@@ -32,6 +32,13 @@ header button{
   cursor: pointer;
 }
 
+.navLink{
+  background-color: transparent;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
 .topNav{
   display: flex;
   height: 4rem;  
@@ -154,10 +161,11 @@ main{
 }
 
 .sphereBig{
+  position: absolute;
   display: none;
   
 
-  z-index: 1;
+  z-index: 0;
  
 }
 

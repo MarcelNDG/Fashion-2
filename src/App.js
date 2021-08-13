@@ -1,3 +1,6 @@
+import { BrowserRouter, Route, Switch} from 'react-router-dom'
+
+
 import './App.css';
 
 import Model from './img/model.png'
@@ -8,6 +11,10 @@ import Searchbar from './components/Searchbar'
 import SeasonMenu from './components/SeasonMenu'
 import SphereBig from './components/SphereBig'
 
+import Home from './Pages/Home'
+import About from './Pages/About'
+
+
 
 function App() {
 
@@ -16,8 +23,8 @@ function App() {
   console.log(kek);
 
   return (
+     <BrowserRouter>
     <div className="App">
-     
      <header>       
        <TopNav />             
      </header>
@@ -36,7 +43,13 @@ function App() {
       <img className='modelPic' src={Model} alt="Model" />
      </div>
         
+      <Switch>
+        <Route path='/' component={Home} exact/>
+        <Route path='/about' component={About} />
+
+      </Switch>
     </div>
+     </BrowserRouter>    
   );
 }
 

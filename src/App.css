@@ -8,6 +8,7 @@ body{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* -- APP -- */
 .App{
   display: grid;
   position: relative;
@@ -20,6 +21,8 @@ body{
   "footer footer";
   overflow: hidden;
 }
+
+/* -- TOPNAV -- */
 
 header{
   grid-area: header;
@@ -88,7 +91,6 @@ header button{
   transform: translateY(-0.3rem);
 }
 
-.exclamation:n
 
 .hmbgIcon{
   padding: 0 2rem 0 0;
@@ -196,12 +198,13 @@ main{
   z-index: 0;  
 }
 
+
+/* -- Background and effects -- */
 .sphereBig{
   position: absolute;
   display: none;  
 
-  z-index: 0;
- 
+  z-index: 0; 
 }
 
 /*-- footer --*/
@@ -305,10 +308,16 @@ footer{
        
   }
 
+  
+  .topNavContainer > button{
+    display: none;
+  }
+
   .navLink{
     font-size: 1.5rem;
   }
 
+  /* -- Image -- */
   .image-container{
     position: absolute;
     height: 80vh;
@@ -320,23 +329,20 @@ footer{
     cursor: pointer;
   }
   
-  .topNavContainer > button{
-    display: none;
-  }
-
   /* --- Main --- */
   .logo{
     left: 4rem;
     font-size: 5rem;
   }
-
+  
   .seasonSearchContainer{
     justify-content: left;
     width: 40rem;
     left: 4rem;
     flex-direction: row;
   }
-
+  
+  /* -- Season menu -- */
   .seasonMenu{
     margin-right: 2rem;
   }
@@ -354,6 +360,7 @@ footer{
     opacity: 1;
   }
 
+  /* --- BAckground and effects --- */
   .sphereBig{
     display: block;
     position: absolute;
@@ -369,7 +376,7 @@ footer{
 
 @media (min-width: 1080px){
 
-  /* --- Main --- */  
+  /* --- Topnav --- */  
 
   .topNav{
     display: flex;
@@ -397,21 +404,23 @@ footer{
     font-size: 1.8rem;
   }
 
+  /* -- Main -- */
   .logo{
     left: 4rem;
     font-size: 11rem;
     bottom: 9rem;
   }
 
+
+  /* -- Season and search -- */
   .seasonSearchContainer{
     width: 40rem;
     bottom: 5rem;
     justify-content: space-around;
   }
-
+  
   .seasonMenu  ul {
-    width: 16rem;
-    
+    width: 16rem;    
   }
 
   .seasonMenu  ul  button{
@@ -422,7 +431,7 @@ footer{
 
   .seasonMenu  ul  button:hover{
     font-weight: bold;    
-  }
+  } 
 
   .searchbar{      
     border-top: none;
@@ -446,6 +455,7 @@ footer{
     opacity: 1;
   }
 
+  /* --- Background and effects --- */
  .sphereBig{
    width: 60rem;
    height: 60rem;

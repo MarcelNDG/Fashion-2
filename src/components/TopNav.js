@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import React from 'react'
 import TopLogo from './TopLogo'
+import Exclamation from './Exclamation'
+
 
 
 
@@ -17,7 +19,7 @@ const TopNav = () => {
                         <Link to='/about' className='navLink'>About</Link>
                     </li>
                     <li>
-                        <Link to='/sale' className='navLink'>Sale</Link>
+                        <Link to='/sale' className='navLink'>Sale<Exclamation /></Link>
                     </li>
                     <li>
                     <Link to='/stores' className='navLink'>Stores</Link>

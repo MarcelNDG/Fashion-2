@@ -64,7 +64,6 @@ header button{
   padding: 0.4rem 1.4rem; 
 }
 
-
 .topNavContainer{
   display: flex;
   margin-left: auto;
@@ -72,6 +71,11 @@ header button{
 
 .topNavContainer ul {
   display: none;  
+}
+
+.exclamation{
+  display: inline-block;
+  margin: 0;
 }
 
 .hmbgIcon{

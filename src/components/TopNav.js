@@ -20,10 +20,10 @@ const TopNav = () => {
                         <Link to='/sale' className='navLink'>Sale</Link>
                     </li>
                     <li>
-                        <button>Stores</button>
+                    <Link to='/stores' className='navLink'>Stores</Link>
                     </li>
                     <li>
-                    <Link to='/contact' className='navLink'>Sale</Link>
+                        <Link to='/contact' className='navLink'>Contact</Link>
                     </li>
                 </ul>
                 

@@ -45,9 +45,15 @@ header button{
 
 .navLink{
   background-color: transparent;
+  text-decoration: none;
   overflow: hidden;
   border: none;
   cursor: pointer;
+  font-weight: lighter;
+  font-family: 'Roboto Condensed';
+  font-size: 1.4rem;
+  margin-left: 2.6rem;
+
 }
 
 .topNav{
@@ -351,11 +357,27 @@ footer{
 @media (min-width: 1080px){
 
   /* --- Main --- */  
+
+  .topNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .topNavContainer{
     display: flex;
     flex-direction: row;
-    width: 22rem;
+    width: 60rem;
     justify-content: space-around;
+    margin-left: 2rem;
+    right: 0;
+  }
+
+  .btnList{
+    margin-left: auto;
+  }
+
+  .navLink{
+    margin-left: 8rem;
   }
 
   .logo{

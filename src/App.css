@@ -76,7 +76,11 @@ header button{
 .exclamation{
   display: inline-block;
   margin: 0;
+  color: rgb(255, 0, 0);  
+  font-weight: bolder;
 }
+
+.exclamation:
 
 .hmbgIcon{
   padding: 0 2rem 0 0;

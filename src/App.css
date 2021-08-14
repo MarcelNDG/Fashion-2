@@ -73,14 +73,22 @@ header button{
   display: none;  
 }
 
-.exclamation{
-  display: inline-block;
-  margin: 0;
-  color: rgb(255, 0, 0);  
-  font-weight: bolder;
+.navLink{
+  position: relative;
+  
 }
 
-.exclamation:
+.exclamation{
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  color: rgb(255, 0, 0);
+  font-size: 2rem; 
+  font-weight: bolder;
+  transform: translateY(-0.3rem);
+}
+
+.exclamation:n
 
 .hmbgIcon{
   padding: 0 2rem 0 0;

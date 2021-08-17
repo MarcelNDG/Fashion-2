@@ -22,10 +22,10 @@ const Home = () => {
             <div className='seasonSearchContainer'>
                 <SeasonMenu />
                 <Searchbar />
-                <SphereBig />
             </div>
         </main>
         <div className="image-container">
+            <SphereBig />
             <img className='modelPic' src={Model} alt="Model" />
         </div>
         <Footer />

@@ -19,13 +19,19 @@ body{
   "header header" 
   "main main" 
   "footer footer";
-  overflow: hidden;
+  overflow:auto;
 }
 
 /* -- TOPNAV -- */
 
 header{
+  display: flex;
+  flex-direction: row;
   grid-area: header;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 10;
 }
 
 header button{
@@ -64,7 +70,8 @@ header button{
   align-items: center;
   color: #000;
   height: 4rem; 
-  padding: 0.4rem 1.4rem; 
+  padding: 0.4rem 1.2rem;
+  width: 100%; 
 }
 
 .topNavContainer{
@@ -93,8 +100,9 @@ header button{
 
 
 .hmbgIcon{
-  padding: 0 2rem 0 0;
-  width: 4.6rem;
+  padding: 0 0 0 0;
+  width: 3rem;
+  right: 0;
 }
 
 /*-- Main --*/
@@ -180,11 +188,11 @@ main{
   display: flex;
   position: absolute;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   bottom:0;
-
+  overflow: hidden;
   z-index: 0;
 }
 
@@ -193,8 +201,7 @@ main{
   width: 16rem;
   opacity: 0.4;
   bottom: 0;
-  margin-left: -25px;
-  
+    
   z-index: 0;  
 }
 
@@ -354,7 +361,7 @@ footer{
   /* -- Image -- */
   .image-container{
     position: absolute;
-    height: 80vh;
+    height: 100vh;
     bottom: 0;
     z-index: 0;
   }
@@ -416,6 +423,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 2.6rem 0 2.6rem;
   }
 
   .topNavContainer{
@@ -494,7 +502,8 @@ footer{
    width: 60rem;
    height: 60rem;
 
-   margin-bottom: -30rem;
+   
+   transform: translateY(10rem);
    margin-right: -15rem;
    right: 0;
 

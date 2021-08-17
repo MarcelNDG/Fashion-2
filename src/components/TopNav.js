@@ -10,7 +10,7 @@ import Exclamation from './Exclamation'
 
 const TopNav = () => {
     return(
-    <header>
+    <>
         <div className='topNav'>
             <TopLogo />
             <div className='topNavContainer'>
@@ -35,7 +35,7 @@ const TopNav = () => {
                 
             </div>
         </div>
-    </header>
+    </>
     )
 }
 

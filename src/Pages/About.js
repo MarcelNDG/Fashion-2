@@ -6,7 +6,9 @@ import Footer from '../components/Footer'
 const About = () => {
     return (
         <>
+        <header>
             <TopNav />
+        </header>    
             <Footer />            
         </>
     )

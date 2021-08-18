@@ -5,8 +5,11 @@ import Footer from '../components/Footer'
 
 const Stores = () => {
     return (
-        <>
-            <TopNav />
+        <>  
+            <header>
+                <TopNav />
+            </header>
+            
             <Footer />
         </>
     )

@@ -8,7 +8,10 @@ import SaleItemSection from '../components/SaleItemSection'
 const Sale = () => {
     return (
         <>
+        <header>
             <TopNav />
+        </header>
+            
             <SaleItemSection />
             <Footer /> 
         </>

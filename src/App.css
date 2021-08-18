@@ -13,13 +13,15 @@ body{
   display: grid;
   position: relative;
   grid-gap: 0.4rem;
-  height: 100vh;  
+  height: 100vh;
+  width: 94vw;  
   grid-template-rows: 0.1fr 1fr 0.1fr;
   grid-template-areas :    
   "header header" 
   "main main" 
   "footer footer";
   
+  justify-content: center;
 
   
   
@@ -32,7 +34,7 @@ header{
   flex-direction: row;
   grid-area: header;
   
-  width: 100vw;
+  width: 90vw;
   justify-content: space-between;
   z-index: 10;
 }
@@ -73,8 +75,8 @@ header button{
   align-items: center;
   color: #000;
   height: 4rem; 
-  padding: 0.4rem 1.2rem;
-  width: 100%; 
+  padding: 0;
+  width: 100vw; 
 }
 
 .topNavContainer{
@@ -271,6 +273,10 @@ footer{
 
  @media (min-width: 320px){
 
+  .App{
+    width: 94vw; 
+  }
+
   /* --- Main --- */
   .logo{
     font-size: 3.2rem;
@@ -287,6 +293,10 @@ footer{
 
 
 @media (min-width: 480px){
+
+  .App{
+    width: 95vw;
+  }
   
   /* --- Main --- */
   main{
@@ -354,6 +364,10 @@ footer{
 
 
 @media (min-width: 720px){
+
+  .App{
+    width: 97vw;
+  }
 
   /* --- Topnav --- */
   .hmbgIcon{
@@ -440,13 +454,17 @@ footer{
 
 @media (min-width: 1080px){
 
+  .App{
+    width: 100vw;
+  }
+
   /* --- Topnav --- */  
 
   .topNav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 2.6rem 0 2.6rem;
+    padding: 0;
   }
 
   .topNavContainer{
@@ -542,11 +560,15 @@ footer{
     justify-content: center;
     justify-items: center; 
     
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.6rem;
     
     height: 100%;
     width: 90vw;
+  }
+
+  .saleItemContainer{
+    width: 30vw;
   }
   
 }

@@ -116,7 +116,7 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100vw;
+  
   
   grid-area: main; 
   
@@ -334,14 +334,14 @@ footer{
 
   .saleItemSection{
   
-  justify-content: center;
- justify-items: center; 
- 
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0.6rem;
-  
-  height: 100%;
-  width: 90vw;
+    justify-content: center;
+    justify-items: center; 
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.6rem;
+    
+    height: 100%;
+    width: 90vw;
   }
 
   .saleItemContainer{
@@ -470,13 +470,16 @@ footer{
   }
 
   /* -- Main -- */
+  
   .logo{
     left: 4rem;
     font-size: 11rem;
     bottom: 9rem;
   }
-
-
+  
+  
+  
+  
   /* -- Season and search -- */
   .seasonSearchContainer{
     width: 40rem;
@@ -487,17 +490,17 @@ footer{
   .seasonMenu  ul {
     width: 16rem;    
   }
-
+  
   .seasonMenu  ul  button{
     font-weight: normal;
     font-size: 2rem;
     line-height: 2.8rem;
   }
-
+  
   .seasonMenu  ul  button:hover{
     font-weight: bold;    
   } 
-
+  
   .searchbar{      
     border-top: none;
     border-right: none;
@@ -512,26 +515,39 @@ footer{
     opacity: 1;
     z-index: 10;
   }
-    
+  
   /* --- Image --- */
   .modelPic{  
     width: 20rem;
     right: 7rem;  
     opacity: 1;
   }
-
+  
   /* --- Background and effects --- */
- .sphereBig{
-   width: 60rem;
-   height: 60rem;
+  .sphereBig{
+    width: 60rem;
+    height: 60rem;
+    
+    
+    transform: translateY(10rem);
+    margin-right: -15rem;
+    right: 0;
+    
+    z-index: 0;
+  }
+  
+  /* -- SALE PAGE -- */
 
-   
-   transform: translateY(10rem);
-   margin-right: -15rem;
-   right: 0;
-
-   z-index: 0;
- }
+  .saleItemSection{  
+    justify-content: center;
+    justify-items: center; 
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.6rem;
+    
+    height: 100%;
+    width: 90vw;
+  }
   
 }
 

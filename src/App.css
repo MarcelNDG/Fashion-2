@@ -20,6 +20,9 @@ body{
   "main main" 
   "footer footer";
   overflow:auto;
+
+  justify-content: center;
+  
 }
 
 /* -- TOPNAV -- */
@@ -115,7 +118,9 @@ main{
   text-align: center;
   width: 100vw;
   
-  grid-area: main;  
+  grid-area: main; 
+  
+  width: 90vw;
 }
 
 .logo{  
@@ -230,20 +235,21 @@ footer{
 
 .saleItemSection{
   display: grid;
-  
+  justify-content: center;
   grid-template-columns: 1fr;
   background-color: rgb(57, 212, 233);
   height: 100%;
-  width: 100%;
-  padding: 0.4rem;
+  width: 90vw;
+  
   
 }
 
 .saleItemContainer{
   border: 1px #000 solid;
   border-radius: 6px;
-  padding: 0.6rem;
-  margin-top: 0.4rem;
+  
+  
+  width: 90vw
   
 }
 
@@ -324,6 +330,23 @@ footer{
   /* --- Season Menu --- */
   .seasonMenu  ul{
     bottom: 10.6rem;
+  }
+
+  .saleItemSection{
+  
+  justify-content: center;
+ justify-items: center; 
+ 
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.6rem;
+  
+  height: 100%;
+  width: 90vw;
+  }
+
+  .saleItemContainer{
+    width: 40vw;
+    align-self: center;
   }
 }
 

@@ -374,7 +374,7 @@ footer{
   }
 
   .saleItemContainer{
-    width: 40vw;
+    width: 100%;
     align-self: center;
   }
 }

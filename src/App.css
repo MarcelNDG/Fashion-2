@@ -13,13 +13,14 @@ body{
   display: grid;
   position: relative;
   grid-gap: 0.4rem;
-  height: 100vh;  
+  height: 100vh;   
   grid-template-rows: 0.1fr 1fr 0.1fr;
   grid-template-areas :    
   "header header" 
   "main main" 
   "footer footer";
-  overflow:auto;
+
+  
 
   justify-content: center;
   
@@ -470,6 +471,21 @@ footer{
   }
 
   /* -- Main -- */
+
+  main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    
+    grid-area: main; 
+    
+    
+  }
+
   .logo{
     left: 4rem;
     font-size: 11rem;

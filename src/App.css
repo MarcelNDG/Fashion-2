@@ -19,9 +19,9 @@ body{
   "header header" 
   "main main" 
   "footer footer";
-  overflow:auto;
+  
 
-  justify-content: center;
+  
   
 }
 
@@ -120,7 +120,7 @@ main{
   
   grid-area: main; 
   
-  width: 90vw;
+  
 }
 
 .logo{  

@@ -233,6 +233,12 @@ footer{
   align-items: center;
 }
 
+/* ---------- ABOUT PAGE ----------- */
+
+.aboutMain{
+  width: 90vw;
+}
+
 /* ---------- SALE PAGE ----------- */
 
 .saleItemSection{

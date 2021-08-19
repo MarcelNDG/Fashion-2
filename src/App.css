@@ -243,7 +243,7 @@ footer{
 }
 
 .aboutMain h2{
-  margin-top: 4vh;
+  margin-top: 3vh;
   margin-bottom: 1rem;
   font-size: 3rem;
   font-weight: lighter;
@@ -336,13 +336,16 @@ footer{
 
   .aboutMain{
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: flex-start;
     width: 90vw;
+
+    z-index: 10;
   }
 
   .aboutMain h2{
-    margin-top: 3.8vh;
+    margin-top: 3vh;
     margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: lighter;
@@ -350,6 +353,7 @@ footer{
 
   .signature{
     width: 11rem;
+    
   }
   
 }
@@ -417,6 +421,18 @@ footer{
   .saleItemContainer{
     width: 100%;
     align-self: center;
+  }
+
+  /* ---- ABOUT PAGE ----*/
+
+  .signature{
+    margin-top: 8vh;
+    width: 18rem;
+    align-self: flex-start;    
+  }
+
+  .aboutContainer{
+    width: 70vw;
   }
 }
 
@@ -506,7 +522,14 @@ footer{
     background-color: bisque;
    
     z-index: 0;
-  }  
+  }
+  
+  /* ---- ABOUT PAGE ----*/
+
+  .aboutContainer{
+    width: 60vw;
+    align-self: flex-start;
+  }
   
 }
 
@@ -546,15 +569,12 @@ footer{
   }
 
   /* -- Main -- */
-  
+
   .logo{
     left: 4rem;
     font-size: 11rem;
     bottom: 9rem;
-  }
-  
-  
-  
+  }  
   
   /* -- Season and search -- */
   .seasonSearchContainer{
@@ -627,6 +647,13 @@ footer{
 
   .saleItemContainer{
     width: 30vw;
+  }
+
+  /* ---- ABOUT PAGE ----*/
+
+  .aboutContainer{
+    width: 58vw;
+    align-self: flex-start;
   }
   
 }

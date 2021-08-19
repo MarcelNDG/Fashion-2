@@ -236,7 +236,17 @@ footer{
 /* ---------- ABOUT PAGE ----------- */
 
 .aboutMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 90vw;
+}
+
+.aboutMain h2{
+  margin-top: 5vh;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: lighter;
 }
 
 /* ---------- SALE PAGE ----------- */
@@ -314,6 +324,7 @@ footer{
   .modelPic{
     width: 18rem;
     margin-left: 0;
+    bottom: 0;
     z-index: 0;
   }
   

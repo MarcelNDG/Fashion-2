@@ -14,8 +14,8 @@ const TopNav = () => {
     return(
     <>
         <div className='topNav'>
-            <TopLogo />
             <div className='topNavContainer'>
+            <TopLogo />
                 <ul className='btnList'>
                     <li>
                         <Link to='/about' className='navLink'>About</Link>
@@ -30,7 +30,7 @@ const TopNav = () => {
                         <Link to='/contact' className='navLink'>Contact</Link>
                     </li>
                 </ul>
-                    <Profiles />
+                <Profiles />
                 
                 <button>
                     <Logo className='hmbgIcon'/>    

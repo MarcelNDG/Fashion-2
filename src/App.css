@@ -51,6 +51,7 @@ header button{
   list-style: none;
   text-decoration: none;
   font-size: 1.4rem;
+  margin-right: auto;
   
 }
 .topLogo span{
@@ -73,6 +74,7 @@ header button{
 .topNav{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #000;
   height: 4rem; 
   padding: 0;
@@ -81,7 +83,8 @@ header button{
 
 .topNavContainer{
   display: flex;
-  margin-left: auto;
+  width: 100%;
+  
 }
 
 .topNavContainer ul {
@@ -460,18 +463,21 @@ footer{
   .hmbgIcon{
     display: none;
   }
+  
+  .topNav{
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
 
   .topNavContainer{
-    align-items: center;
-    padding-right: 2rem;
-    
+    align-items: center;    
+    margin: 0;    
   }
 
   .topNavContainer > ul{
     display: flex;
     list-style: none;
-    
-       
   }
 
   
@@ -479,8 +485,13 @@ footer{
     display: none;
   }
 
+  .btnList{
+    padding: 0;
+  }
+
   .navLink{
     font-size: 1.5rem;
+    margin-left: 1;
   }
 
   /* -- Account -- */
@@ -489,7 +500,7 @@ footer{
     display: flex;
     align-items: center;
     margin-left: 1rem;
-    padding-left: 0.4rem;
+    
     /*border-left: solid 2px #777777;*/
   }
 

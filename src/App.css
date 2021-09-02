@@ -595,15 +595,18 @@ footer{
   /* --- Topnav --- */
   
 
-  /* -- Account -- */
-  
+  /* -- Account -- */ 
   
 
   /* -- Main -- */
 
+  main{
+    justify-content: left;
+  }
+
   .logo{
-    left: 4rem;
-    font-size: 11rem;
+    
+    font-size: 9rem;
     bottom: 9rem;
   }  
   

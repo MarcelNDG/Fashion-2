@@ -1,9 +1,11 @@
 import { ReactComponent as Logo } from '../icon/hmbg-round.svg'
+
 import { Link } from 'react-router-dom'
 
 import React from 'react'
 import TopLogo from './TopLogo'
 import Exclamation from './Exclamation'
+import Profiles from './Profiles'
 
 
 
@@ -28,6 +30,7 @@ const TopNav = () => {
                         <Link to='/contact' className='navLink'>Contact</Link>
                     </li>
                 </ul>
+                    <Profiles />
                 
                 <button>
                     <Logo className='hmbgIcon'/>    

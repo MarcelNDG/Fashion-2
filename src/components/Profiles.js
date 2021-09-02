@@ -7,7 +7,10 @@ const Profiles = () => {
             <div className='profileIcon'>
                 <UserIcon />
             </div>
-            <h3>User</h3>
+            <h3>User
+                <br></br>
+                <span>Menu</span>
+            </h3>
         </div>
     )
 }

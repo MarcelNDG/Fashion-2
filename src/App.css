@@ -500,20 +500,25 @@ footer{
     display: flex;
     align-items: center;
     margin-left: 1rem;
-    
-    /*border-left: solid 2px #777777;*/
+    padding-left: 1rem;
+    border-left: solid 1px #00000065;
   }
 
   .accountContainer h3{
     margin: 0 0 0 0.4rem;
+    font-weight: lighter;
+  }
+  .accountContainer h3 span{
+    
+    font-weight: normal;
   }
 
   .profileIcon{
     display: block;
     width: 3rem;
-    height: 3rem;
-    background-color: rgb(235, 184, 230);
+    height: 3rem;    
     border-radius: 50%;
+    
   }
   
 
@@ -587,34 +592,12 @@ footer{
     width: 100vw;
   }
 
-  /* --- Topnav --- */  
+  /* --- Topnav --- */
+  
 
-  .topNav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .topNavContainer{
-    display: flex;
-    flex-direction: row;
-    width: 40rem;
-    justify-content: space-around;
-    margin-left: 2rem;
-    right: 0;
-    padding: 0;
-  }
-
-  .btnList{
-    margin-left: auto;
-    padding: 0;
-  }
-
-  .navLink{
-    margin-left: 5rem;
-    font-size: 1.8rem;
-  }
+  /* -- Account -- */
+  
+  
 
   /* -- Main -- */
 

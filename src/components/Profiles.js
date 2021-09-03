@@ -5,7 +5,10 @@ const Profiles = () => {
     return (
         <div className='accountContainer'>
             <div className='profileIcon'>
-                <UserIcon />
+                <button className='userButton' id='userButton'>
+                    <UserIcon />
+                </button>
+                
             </div>
             <h3>User
                 <br></br>

@@ -14,7 +14,29 @@ import Contact from './Pages/Contact'
 
 function App() {
 
-  
+  useEffect(() => {
+    const userBtn = document.getElementById('userButton')
+    const profileMenu = document.getElementById('profileMenu')
+    console.log(profileMenu, userBtn);
+
+    function showMenu() {
+      if(profileMenu.classList.contains('showMenu')){
+        profileMenu.classList.remove('showMenu')
+        console.log('removed');
+      } else{
+        profileMenu.classList.add('showMenu')
+        console.log('added');
+      }
+    }
+
+    
+
+    userBtn.addEventListener("click",showMenu)
+
+    return () => {
+      
+    }
+  }, [])
 
   return (
      <BrowserRouter>

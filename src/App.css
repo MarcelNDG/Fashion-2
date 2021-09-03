@@ -73,6 +73,7 @@ header button{
 
 .topNav{
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   color: #000;
@@ -377,6 +378,17 @@ footer{
 
 @media (min-width: 480px){
 
+  .profileMenu{
+    height: 10rem;
+    width: 9.3rem;
+    right: 0;
+    position: absolute;
+    transform: translate(2.3rem, 6.6rem);
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
   
   /* --- Main --- */
   main{
@@ -655,8 +667,8 @@ footer{
   
   /* --- Background and effects --- */
   .sphereBig{
-    width: 60rem;
-    height: 60rem;
+    width: 50rem;
+    height: 50rem;
     
     
     transform: translateY(10rem);

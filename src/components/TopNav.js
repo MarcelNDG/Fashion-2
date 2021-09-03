@@ -1,5 +1,8 @@
 import { ReactComponent as Logo } from '../icon/hmbg-round.svg'
+
 import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
+import { ReactComponent as ProfileBtn } from '../icon/usermenu.svg'
+import { ReactComponent as ConfigBtn } from '../icon/shopping-cart.svg'
 
 import { Link } from 'react-router-dom'
 
@@ -40,13 +43,24 @@ const TopNav = () => {
             </div>
             <div className='profileMenu'>                
                 <div className='cartContainer'>
-                    <button>Shopping kart</button>
                     <button className='cart'>
                         <Kart />
                     </button> 
+                    <button className='profileBtnText'>Shopping kart</button>
                 </div>                
-                    <button>Profile</button>
-                    <button>Profile</button>
+                <div className='cartContainer'>
+                    <button className='cart'>
+                        <ProfileBtn />
+                    </button> 
+                    <button className='profileBtnText'>Profile</button>
+                </div>                
+                <div className='cartContainer'>
+                    <button className='cart'>
+                        <ConfigBtn />
+                    </button> 
+                    <button className='profileBtnText'>Settings</button>
+                </div>                
+                    
             </div>
         </div>
     </>

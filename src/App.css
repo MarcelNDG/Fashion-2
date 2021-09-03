@@ -378,17 +378,9 @@ footer{
 
 @media (min-width: 480px){
 
-  .profileMenu{
-    height: 10rem;
-    width: 9.3rem;
-    right: 0;
-    position: absolute;
-    transform: translate(2.3rem, 6.6rem);
-    background-color: #fff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-
+ .profileMenu{
+   display: none;
+ }
   
   /* --- Main --- */
   main{
@@ -507,6 +499,17 @@ footer{
   }
 
   /* -- Account -- */
+
+  .profileMenu{
+    height: 11rem;
+    width: 9.3rem;
+    right: 0;
+    position: absolute;
+    transform: translate(2.3rem, 7rem);
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
   
   .accountContainer{
     display: flex;
@@ -538,7 +541,8 @@ footer{
   .profileMenu{
     display: flex;
     flex-direction: column;
-    padding: 0.6rem 0.4rem;   
+    padding: 0.6rem 0.2rem;
+    
   }
 
   .profileMenu button{
@@ -546,24 +550,36 @@ footer{
     height: 3rem;
   }
 
+  .profileMenu button:hover {
+    font-weight: bolder;
+  }
+
   .profileMenu > button:nth-child(2),button:nth-child(3){
     text-align: left;
     padding: 0.2rem 0.4rem;
-    background-color: aqua;
-       
   }
+
+  
 
   .cartContainer{
     display: flex;
+    justify-content: left;
     width: 100%;
     border-radius: 8px;
-    padding: 0.2rem 0.4rem;
-    justify-content: space-between;
-    background-color: #f8d3d3;
+    padding: 0.2rem 0.6rem 0.2rem 0.4rem;
+    
+  }
+
+  .profileBtnText{
+    margin-left: 0.5rem;
   }
 
   .cartContainer button:nth-child(1){
     font-weight: normal;
+    
+  }
+  .cartContainer button:nth-child(1):hover{
+    font-weight: bolder;
   }
 
   .cart{
@@ -571,6 +587,7 @@ footer{
     width: 1.6rem;
   }
 
+  
   /* -- Image -- */
   .image-container{
     position: absolute;

@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 import './App.css';
@@ -13,9 +14,7 @@ import Contact from './Pages/Contact'
 
 function App() {
 
-  const kek = "kek";
-
-  console.log(kek);
+  
 
   return (
      <BrowserRouter>

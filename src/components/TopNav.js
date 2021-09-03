@@ -1,4 +1,5 @@
 import { ReactComponent as Logo } from '../icon/hmbg-round.svg'
+import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
 
 import { Link } from 'react-router-dom'
 
@@ -37,7 +38,15 @@ const TopNav = () => {
                 </button>           
                 
             </div>
-            <div className='profileMenu'></div>
+            <div className='profileMenu'>
+                <div className='cartContainer'>
+                    <button>Shopping kart</button>
+                    <button className='cart'>
+                        <Kart />
+                    </button> 
+                </div>
+                
+            </div>
         </div>
     </>
     )

@@ -532,7 +532,22 @@ footer{
     border-radius: 50%;
     
   }
+
+  /* -- Account Profile Menu --*/
+
+  .profileMenu{
+    padding: 0.6rem 0.4rem;
+  }
+
+  .cartContainer{
+    display: flex;
+  }
   
+  .cart{
+    
+    color: black;
+    width: 2rem;
+  }
 
   /* -- Image -- */
   .image-container{

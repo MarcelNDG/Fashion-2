@@ -38,14 +38,15 @@ const TopNav = () => {
                 </button>           
                 
             </div>
-            <div className='profileMenu'>
+            <div className='profileMenu'>                
                 <div className='cartContainer'>
                     <button>Shopping kart</button>
                     <button className='cart'>
                         <Kart />
                     </button> 
-                </div>
-                
+                </div>                
+                    <button>Profile</button>
+                    <button>Profile</button>
             </div>
         </div>
     </>

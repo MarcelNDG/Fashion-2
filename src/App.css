@@ -501,6 +501,11 @@ footer{
 
 @media (min-width: 720px){
 
+  /* -- Side Menu -- */
+
+  .sideMenu{ 
+    display: none;
+  }
   
 
   /* --- Topnav --- */
@@ -531,6 +536,7 @@ footer{
 
   .btnList{
     padding: 0;
+    z-index: 200;
   }
 
   .navLink{

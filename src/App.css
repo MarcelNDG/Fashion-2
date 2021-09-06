@@ -55,33 +55,27 @@ body{
 
   /* -- Mobile menu  -- */  
 
-  .sideMenu{
-    
-    
-
-    position: absolute;
+  .sideMenu{ 
     display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 0, 0.39);
     height: 100vh;
     width: 100vw;
-    background-color: rgba(255, 255, 0, 0.39);
     overflow-y: hidden;
-
 
     z-index: 10;
   }
 
-  .sideNav{
-    display: flex;    
-    justify-content: flex-end;
-    width: 92vw;
-    height: 4rem;
-  }
+ .sideContent{
+   height: 90vh;
+   width: 100vw;
 
-  .sideNav button{
-    
-  }
+   background-color: rgba(255, 0, 0, 0.356);
 
-  
+   
+ }  
 
 /* -- Profile menu --*/
 
@@ -89,15 +83,13 @@ body{
   display: none;
 }
 
-
-
 header{
   display: flex;
   flex-direction: row;
   grid-area: header;
-  
-  width: 90vw;
   justify-content: space-between;
+  width: 90vw;  
+
   z-index: 11;
 }
 
@@ -115,9 +107,9 @@ header button{
   font-size: 1.4rem;
   margin-right: auto;
 
-  z-index: 102;
-  
+  z-index: 102;  
 }
+
 .topLogo span{
   font-weight: bold;
 }
@@ -132,7 +124,6 @@ header button{
   font-family: 'Roboto Condensed';
   font-size: 1.4rem;
   margin-left: 2.6rem;
-
 }
 
 .topNav{
@@ -148,8 +139,7 @@ header button{
 
 .topNavContainer{
   display: flex;
-  width: 100%;
-  
+  width: 100%;  
 }
 
 .topNavContainer ul {
@@ -157,8 +147,7 @@ header button{
 }
 
 .navLink{
-  position: relative;
-  
+  position: relative;  
 }
 
 .exclamation{
@@ -193,9 +182,7 @@ main{
   text-align: center;
   
   
-  grid-area: main; 
-  
-  
+  grid-area: main;
 }
 
 .logo{  

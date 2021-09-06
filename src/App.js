@@ -12,6 +12,7 @@ import Contact from './Pages/Contact'
 
 
 
+
 function App() {
 
   useEffect(() => {
@@ -50,6 +51,7 @@ function App() {
         <Route path='/stores' component={Stores} />
         <Route path='/contact' component={Contact} />
 
+      
       </Switch>
     </div>
      </BrowserRouter>    

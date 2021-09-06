@@ -4,7 +4,7 @@ import React from 'react'
 import Model from '../img/model.png'
 
 import TopNav from '../components/TopNav'
-import MenuBtn from '../components/MenuBtn'
+
 import SeasonMenu from '../components/SeasonMenu'
 import Searchbar from '../components/Searchbar'
 import SphereBig from '../components/SphereBig'
@@ -17,7 +17,7 @@ const Home = () => {
          
         
         <header>
-            <MenuBtn /> 
+            
             <TopNav />    
         </header>      
 
@@ -33,10 +33,8 @@ const Home = () => {
             <img className='modelPic' src={Model} alt="Model" />
         </div>
         <Footer />
-
-        <div className='sideMenu'>            
-            <div className='sideContent'></div>
-        </div>
+        
+        
     </>
     )
 }

@@ -9,6 +9,9 @@ import MenuBtn from '../components/MenuBtn'
 import TopLogo from './TopLogo'
 import Exclamation from './Exclamation'
 import Profiles from './Profiles'
+import SideMenu from './SideMenu'
+
+
 
 
 
@@ -37,6 +40,7 @@ const TopNav = () => {
                 <Profiles />
                 
                 
+                
                    
                           
                 
@@ -63,6 +67,7 @@ const TopNav = () => {
                     
             </div>
         </div>
+        <SideMenu />
     </>
     )
 }

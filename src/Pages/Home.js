@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ReactComponent as Logo } from '../icon/hmbg-round.svg'
+
 import Model from '../img/model.png'
 
 import TopNav from '../components/TopNav'
@@ -14,12 +14,7 @@ import Footer from '../components/Footer'
 const Home = () => {
     return (
         <>     
-        <div className='sideMenu'>
-            <div className='sideNav'>
-                <Logo className='hmbgIcon sideNavIcon'/>
-            </div>
-            <div className='sideContent'></div>
-        </div>   
+         
         
         <header>
             <MenuBtn /> 
@@ -38,6 +33,10 @@ const Home = () => {
             <img className='modelPic' src={Model} alt="Model" />
         </div>
         <Footer />
+
+        <div className='sideMenu'>            
+            <div className='sideContent'></div>
+        </div>
     </>
     )
 }

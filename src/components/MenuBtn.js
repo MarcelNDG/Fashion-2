@@ -20,6 +20,7 @@ const MenuBtn = () => {
             } else {
                 sideMenu.classList.add('showMenu')
                 sideMenu.classList.remove('noMenu')
+                console.log('test');
             }
 
              

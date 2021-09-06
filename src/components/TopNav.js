@@ -5,6 +5,7 @@ import { ReactComponent as ConfigBtn } from '../icon/shopping-cart.svg'
 import { Link } from 'react-router-dom'
 
 import React from 'react'
+import MenuBtn from '../components/MenuBtn'
 import TopLogo from './TopLogo'
 import Exclamation from './Exclamation'
 import Profiles from './Profiles'
@@ -32,6 +33,7 @@ const TopNav = () => {
                         <Link to='/contact' className='navLink'>Contact</Link>
                     </li>
                 </ul>
+                <MenuBtn /> 
                 <Profiles />
                 
                 

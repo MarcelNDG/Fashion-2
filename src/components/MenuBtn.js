@@ -9,10 +9,21 @@ const MenuBtn = () => {
     useEffect(() => {
 
         const mobileBtn = document.getElementById('mobileBtn')
+        const sideMenu = document.getElementById('sideMenu')
         console.log(mobileBtn);
 
         mobileBtn.addEventListener('click', () => {
-            console.log('holi');
+            if (sideMenu.classList.contains('showMenu')) {
+                sideMenu.classList.remove('showMenu')
+                sideMenu.classList.add('noMenu')
+                
+            } else {
+                sideMenu.classList.add('showMenu')
+                sideMenu.classList.remove('noMenu')
+            }
+
+             
+
         })
         return () => {
             //cleanup

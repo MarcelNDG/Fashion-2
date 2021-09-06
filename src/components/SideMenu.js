@@ -3,7 +3,7 @@ import React from 'react'
 const SideMenu = () => {
     return (
         <>
-        <div className='sideMenu'>            
+        <div className='sideMenu showMenu' id='sideMenu'>            
             <div className='sideContent'></div>
         </div>
         </>

@@ -14,10 +14,7 @@ import Footer from '../components/Footer'
 const Home = () => {
     return (
         <>     
-         
-        
-        <header>
-            
+        <header>            
             <TopNav />    
         </header>      
 

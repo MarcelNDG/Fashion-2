@@ -1,5 +1,3 @@
-import { ReactComponent as Logo } from '../icon/hmbg-round.svg'
-
 import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
 import { ReactComponent as ProfileBtn } from '../icon/usermenu.svg'
 import { ReactComponent as ConfigBtn } from '../icon/shopping-cart.svg'
@@ -36,9 +34,9 @@ const TopNav = () => {
                 </ul>
                 <Profiles />
                 
-                <button>
-                    <Logo className='hmbgIcon'/>    
-                </button>           
+                
+                   
+                          
                 
             </div>
             <div className='profileMenu showMenu' id='profileMenu'>                

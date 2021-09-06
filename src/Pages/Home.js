@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from '../icon/hmbg-round.svg'
 import Model from '../img/model.png'
 
 import TopNav from '../components/TopNav'
+import MenuBtn from '../components/MenuBtn'
 import SeasonMenu from '../components/SeasonMenu'
 import Searchbar from '../components/Searchbar'
 import SphereBig from '../components/SphereBig'
@@ -21,6 +22,7 @@ const Home = () => {
         </div>   
         
         <header>
+            <MenuBtn /> 
             <TopNav />    
         </header>      
 

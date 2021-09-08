@@ -405,7 +405,7 @@ footer{
 }
 
 .store{
-  height: 20rem;
+  height: 24rem;
   width: 100%;
   padding: 1rem;
   background-color: rgba(128, 255, 0, 0.541);
@@ -413,13 +413,25 @@ footer{
 }
 
 .store h3{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-top: 0.4rem;
+  
+}
+.store h4{
+  margin: 0.4rem 0;
 }
 
 .store p{
   text-align: left;
 }
+
+.storeImgPLaceholder{
+  width: 100%;
+  height: 10rem;
+  margin-top: 1rem;
+  background-color: chocolate;
+}
+
 /* ---------- SALE PAGE ----------- */
 
 .saleItemSection{

@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { ReactComponent as UserIcon } from '../icon/user.svg'
+// import { ReactComponent as UserIcon } from '../icon/user.svg'
+
+import { ReactComponent as ProfileBtn } from '../icon/usermenu.svg'
+import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
+import { ReactComponent as ConfigBtn } from '../icon/setting-lines.svg'
 
 
 
@@ -10,27 +14,50 @@ const SideMenu = () => {
         <>
         <div className='sideMenu noMenu' id='sideMenu'> 
         <div className='sideProfile'>
-            <button className='userButton'><UserIcon /></button>
+            <div className='profileIconMobile'>
+                <button className='userButtonMobile'>
+                    <ProfileBtn />
+                </button>
+                    <h3>Profile
+            </h3>
+            </div>
+            <div className='profileIconMobile'>
+                <button className='userButtonMobile'>
+                    <Kart />
+                </button>
+                    <h3>Check
+                        <br></br>
+                        <span>Kart</span>
+                    </h3>
+            </div>
+            <div className='profileIconMobile'>
+                <button className='userButtonMobile'>
+                    <ConfigBtn />
+                </button>
+                    <h3>Profile
+            </h3>
+            </div>
+            
             <button> </button>
             <button> </button>
             
         </div>
              
             <div className='sideContent'>
-                <ul>
-                    <button>
-                        <Link to='/About'>ITEM</Link >
+                
+                    <button >
+                        <Link to='/About' className='sideBtn'>About</Link >
                         </button> 
                     <button>
-                        <Link to='/Sale'>ITEM</Link>
+                        <Link to='/Sale' className='sideBtn'>Sale</Link>
                         </button> 
                     <button>
-                        <Link to='/Stores'>ITEM</Link>
+                        <Link to='/Stores' className='sideBtn'>Stores</Link>
                         </button> 
                     <button>
-                        <Link to='/Contact'>ITEM</Link>
+                        <Link to='/Contact' className='sideBtn'>Contact</Link>
                         </button> 
-                </ul>
+                
             </div>
         </div>
         </>

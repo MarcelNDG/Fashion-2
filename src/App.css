@@ -50,49 +50,78 @@ body{
     padding: 0 0 0 0;
     width: 3rem;
     right: 0;
-    
   }
 
   /* -- Mobile menu  -- */  
 
-  .sideMenu{ 
-    
+  .sideMenu{     
     position: absolute;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: rgba(255, 255, 0, 0.39);
+    background-color: rgb(255, 255, 255);
     overflow-y: hidden;
     height: 100vh;
     width: 100vw;
     left: 0;
 
-    
-
     z-index: 10;
   }
 
- .sideContent{
-   height: 90vh;
-   width: 100vw;
-   background-color: rgba(255, 0, 0, 0.356);   
- }
-
- .sideContent ul{
-   display: flex;
-   flex-direction: column;
- }
-
- .sideContent ul li{
-   list-style: none;
- }
-
+ 
  .sideProfile{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 0.4rem;
    width: 100%;
-   height: 20vh;
-   background-color: rgba(0, 255, 255, 0.432);
+   height: 18vh;   
    margin-top: 10vh;
+   padding: 1rem;
  }
  
+ .profileIconMobile{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: rgb(236, 236, 236);
+   border-radius: 8px;
+ }
+
+ .profileIconMobile h3{
+   font-weight: normal;
+   margin-left: 0.4rem;
+ }
+
+ .userButtonMobile{
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+  padding: 0;
+ }
+
+ .settingsButtonMobile{
+  width: 10rem;
+  height: 10rem;
+  color: #000;
+  padding: 0;
+ }
+
+ /* -- Side content big buttons --*/
+
+ .sideContent{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 90vh;
+  width: 100vw;
+  padding-bottom: 26vh;   
+  background-color: rgba(255, 0, 0, 0.356);
+}
+
+.sideBtn{
+ text-decoration: none;
+}
+
+
  .noMenu{
    display: none;
  }
@@ -444,6 +473,17 @@ footer{
 
 
 @media (min-width: 480px){
+
+  /* -- Side Menu -- */
+
+  .profileIconMobile h3{
+    font-size: 1.2rem;
+  }
+
+.userButtonMobile{
+  width: 3rem;
+  height: 3rem;
+}
 
   
   /* --- Main --- */

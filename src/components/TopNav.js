@@ -1,6 +1,6 @@
-import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
 import { ReactComponent as ProfileBtn } from '../icon/usermenu.svg'
-import { ReactComponent as ConfigBtn } from '../icon/shopping-cart.svg'
+import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
+import { ReactComponent as ConfigBtn } from '../icon/setting-lines.svg'
 
 import { Link } from 'react-router-dom'
 

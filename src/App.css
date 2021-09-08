@@ -52,8 +52,7 @@ body{
     right: 0;
   }
 
-  /* -- Mobile menu  -- */  
-
+  /* -- Mobile menu  -- */    
   .sideMenu{     
     position: absolute;
     flex-direction: column;
@@ -63,11 +62,12 @@ body{
     height: 100vh;
     width: 100vw;
     left: 0;
-
+    
     z-index: 10;
   }
-
- 
+  
+  
+  /* -- Side profile menu  -- */    
  .sideProfile{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -106,8 +106,18 @@ body{
   padding: 0;
  }
 
- /* -- Side content big buttons --*/
+ /* -- Side content sales  --*/
+ .sideSales{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 0.4rem;
+   height:20vh;
+   background-color: chartreuse;
+ }
 
+
+
+ /* -- Side content main menu --*/
  .sideContent{
   display: grid;
   justify-content: center;

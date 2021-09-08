@@ -9,6 +9,12 @@ const SideMenu = () => {
     return (
         <>
         <div className='sideMenu noMenu' id='sideMenu'> 
+        <div className='sideProfile'>
+            <button> </button>
+            <button> </button>
+            <button> </button>
+            
+        </div>
              
             <div className='sideContent'>
                 <ul>

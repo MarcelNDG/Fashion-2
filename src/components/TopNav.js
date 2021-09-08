@@ -37,8 +37,7 @@ const TopNav = () => {
                     </li>
                 </ul>
                 <MenuBtn /> 
-                <Profiles />
-                
+                <Profiles />              
                 
                 
                    

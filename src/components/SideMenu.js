@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
+import { ReactComponent as UserIcon } from '../icon/user.svg'
 
 
 
@@ -10,7 +10,7 @@ const SideMenu = () => {
         <>
         <div className='sideMenu noMenu' id='sideMenu'> 
         <div className='sideProfile'>
-            <button> </button>
+            <button className='userButton'><UserIcon /></button>
             <button> </button>
             <button> </button>
             

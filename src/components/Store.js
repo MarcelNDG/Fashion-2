@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Store = ({adress, region, schedule}) => {
+const Store = ({location, adress, region, schedule}) => {
     return (
         <div className='store'>
             <div className='storeData'>
-                <h3>Location</h3>
+                <h3>{location}</h3>
                 <div className='storeAdressContainer'>
                     <h4>{adress}</h4>
                     <h4>{region}</h4>

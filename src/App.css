@@ -393,7 +393,7 @@ footer{
 .storeList{
   height: 100%;
   width: 100%;
-  background-color: rgba(128, 255, 0, 0.226);
+  /* background-color: rgba(128, 255, 0, 0.226); */
 }
 
 .storeContainer{
@@ -408,8 +408,8 @@ footer{
   height: 24rem;
   width: 100%;
   padding: 1rem;
-  background-color: rgba(128, 255, 0, 0.541);
-  border: solid #000 2px;
+  /*  background-color: rgba(128, 255, 0, 0.541); */
+  
 }
 
 .storeAdressContainer{
@@ -426,7 +426,7 @@ footer{
   
 }
 .store h4{
-  margin: 0.4rem 0;
+  margin: 0.3rem 0;
 }
 
 .store p{
@@ -435,10 +435,11 @@ footer{
 
 .storeMapBtn{
   cursor: pointer;
-  background-color: coral;
+  background-color: rgb(255, 220, 220);
   display: inline-block;
   border: none;
   padding: 0.4rem;
+  margin-top: 0.6rem;
   border-radius: 8px;
   font-weight: bold;
 }

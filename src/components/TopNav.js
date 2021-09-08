@@ -44,7 +44,7 @@ const TopNav = () => {
                           
                 
             </div>
-            <div className='profileMenu showMenu' id='profileMenu'>                
+            <div className='profileMenu noMenu' id='profileMenu'>                
                 <div className='cartContainer'>
                     <button className='cart'>
                         <Kart />

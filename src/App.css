@@ -106,16 +106,7 @@ body{
   padding: 0;
  }
 
- /* -- Side content sales  --*/
- .sideSales{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 0.4rem;
-   height:20vh;
-   background-color: chartreuse;
- }
-
-
+ 
 
  /* -- Side content main menu --*/
  .sideContent{
@@ -124,7 +115,7 @@ body{
   grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 90vh;
   width: 100vw;
-  padding-bottom: 20vh;   
+  padding-bottom: 12vh;   
   
   padding-left: 4vw;
 }
@@ -141,6 +132,7 @@ body{
  
  font-size: 2rem;
 }
+
 
 
  .noMenu{
@@ -232,6 +224,11 @@ header button{
   font-size: 2rem; 
   font-weight: bolder;
   transform: translateY(-0.3rem);
+}
+
+.sideBtn p{
+ font-size: 2.6rem;
+ transform: translateY(-0.4rem)
 }
 
 
@@ -387,6 +384,42 @@ footer{
   width: 10rem;
 }
 
+/* ---------- STORES PAGE ----------- */
+.storeMain{
+  width: 90vw;
+  justify-content: center;
+}
+
+.storeList{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 255, 0, 0.226);
+}
+
+.storeContainer{
+  display: grid;
+  grid-gap: 0.4rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.store{
+  height: 20rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(128, 255, 0, 0.541);
+  border: solid #000 2px;
+}
+
+.store h3{
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+}
+
+.store p{
+  text-align: left;
+}
 /* ---------- SALE PAGE ----------- */
 
 .saleItemSection{

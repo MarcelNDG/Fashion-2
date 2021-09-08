@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // import { ReactComponent as UserIcon } from '../icon/user.svg'
+import Exclamation from './Exclamation'
+
 
 import { ReactComponent as ProfileBtn } from '../icon/usermenu.svg'
 import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
@@ -35,18 +37,13 @@ const SideMenu = () => {
                 </div>
             </div>
 
-            <div className='sideSales'>
-                <button>Sale Button</button>
-                <button>Sale Button</button>
-                <button>Sale Button</button>
-            </div>
-                
+                           
             <div className='sideContent'>                
                 <button >
                     <Link to='/About' className='sideBtn'>About</Link >
                     </button> 
                 <button>
-                    <Link to='/Sale' className='sideBtn'>Sale</Link>
+                    <Link to='/Sale' className='sideBtn'>Sale<Exclamation className='exclamationMobile'/></Link>
                     </button> 
                 <button>
                     <Link to='/Stores' className='sideBtn'>Stores</Link>

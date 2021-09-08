@@ -110,15 +110,26 @@ body{
 
  .sideContent{
   display: grid;
+  justify-content: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 90vh;
   width: 100vw;
-  padding-bottom: 26vh;   
-  background-color: rgba(255, 0, 0, 0.356);
+  padding-bottom: 20vh;   
+  
+  padding-left: 4vw;
+}
+
+.sideContent button{
+  text-align: center;
 }
 
 .sideBtn{
  text-decoration: none;
+ font-weight: lighter;
+ font-family: 'Roboto Condensed', sans-serif;
+ border-bottom: solid rgb(199, 199, 199) 1px;
+ 
+ font-size: 2rem;
 }
 
 

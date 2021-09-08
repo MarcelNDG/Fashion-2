@@ -412,9 +412,17 @@ footer{
   border: solid #000 2px;
 }
 
+.storeAdressContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
 .store h3{
   font-size: 1.4rem;
   margin-top: 0.4rem;
+  font-weight: normal;
   
 }
 .store h4{
@@ -423,6 +431,16 @@ footer{
 
 .store p{
   text-align: left;
+}
+
+.storeMapBtn{
+  cursor: pointer;
+  background-color: coral;
+  display: inline-block;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 .storeImgPLaceholder{

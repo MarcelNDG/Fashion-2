@@ -6,7 +6,7 @@ const StoreList = () => {
     return (
         <div className='storeList'>
             <div className='storeContainer'>
-                <Store />
+                <Store adress={'Avenida siempreviva 1234'} region={'Concepción'} schedule={'00:07 AM - 00:08 PM'}/>
                 <Store />
                 <Store />
                 

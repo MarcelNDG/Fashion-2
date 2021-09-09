@@ -869,10 +869,19 @@ footer{
   }
   
   /* ---- STORES PAGE ----*/
+  .store{
+    padding: 0;
+  }
 
   .storeContainer{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .storeAdressContainer{
+    justify-content: space-between;
   }
 }
 
@@ -900,6 +909,13 @@ footer{
     bottom: 9rem;
   }  
   
+  .storeContainer{
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1rem;
+  }
+
   /* -- Season and search -- */
   .seasonSearchContainer{
     width: 40rem;

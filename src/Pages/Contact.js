@@ -9,7 +9,8 @@ const Contact = () => {
         <header>
             <TopNav />
         </header>
-            <Footer />
+        <main></main>
+        <Footer />
         </>
     )
 }

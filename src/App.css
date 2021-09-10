@@ -645,6 +645,7 @@ footer{
 
   .aboutContainer{
     width: 70vw;
+    
   }
 }
 
@@ -869,8 +870,21 @@ footer{
   
   /* ---- ABOUT PAGE ----*/
   
+  .aboutMain{
+    align-items: flex-start;
+  }
+  .aboutMain h2{
+    text-align: center;
+  }
   .aboutContainer{
     display: flex;
+    width: 30rem;
+    flex-direction: column;
+    align-items: left;    
+  }
+
+  .signature{
+    align-self: center;
   }
   
   /* ---- STORES PAGE ----*/

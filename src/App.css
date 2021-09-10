@@ -510,6 +510,17 @@ footer{
  
 }
 
+  /* ---------- ABOUT PAGE ----------- */
+
+  .contactMain{
+    background-color: aqua;
+    height: 100%;
+    width: 90vw;
+  }
+
+  .contactContainer{
+    width: 100%;
+  }
 
 /* --- MEDIA QUERIES --- */
 

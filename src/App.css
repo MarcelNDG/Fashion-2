@@ -424,6 +424,7 @@ footer{
   font-size: 1.4rem;
   margin-top: 0.4rem;
   font-weight: normal;
+  text-align: left;
   
 }
 .store h4{
@@ -443,6 +444,7 @@ footer{
   margin-top: 0.4rem;
   border-radius: 8px;
   font-weight: bold;
+  width: 14rem;
 }
 
 .storeImgPLaceholder{
@@ -659,8 +661,11 @@ footer{
 
   .storeContainer{
     display: grid;
-    grid-template-columns: 1fr ;
-    padding: 0 8vw;
+    grid-template-columns: 1fr;    
+  }
+
+  .storeListContainer{
+    padding: 4rem 3vw;
   }
   
 
@@ -875,9 +880,9 @@ footer{
 
   .storeContainer{
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: 1fr 1fr;
-    padding: 1rem 1rem;
+    
   }
 
   .storeAdressContainer{
@@ -908,13 +913,22 @@ footer{
     font-size: 9rem;
     bottom: 9rem;
   }  
+
+  /* -- Store -- */
+
+  .storeListContainer{
+    padding: 2rem 6rem;
+  }
   
   .storeContainer{
     display: grid;
     grid-gap: 6rem;
     grid-template-columns: 1fr 1fr;
-    padding: 1rem 1rem;
+    
   }
+
+ 
+  
 
   /* -- Season and search -- */
   .seasonSearchContainer{

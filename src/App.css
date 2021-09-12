@@ -514,12 +514,46 @@ footer{
 
   .contactMain{
     background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100%;
     width: 90vw;
   }
 
   .contactContainer{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    background-color: orangered;
+    padding-top: 2rem;
+    align-items: center;
+  }
+
+  .contactContainer h3{
+    margin-bottom: 0.4rem;
+  }
+
+  .contactForm{
+    background-color: orchid;
+    text-align: left;
+    width: 12rem;
+  }
+
+  .contactForm input{
+    
+    width: 100%;
+  }
+
+  .checkContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .checkContainer h3{
+    margin: 0;
   }
 
 /* --- MEDIA QUERIES --- */

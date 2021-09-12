@@ -13,8 +13,19 @@ const Contact = () => {
         <main className='contactMain'>
             <div className='contactContainer'>
                 <h2>Contact us...</h2>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas fermentum efficitur. Vivamus volutpat risus augue, vitae tristique diam interdum ut. Nam eget libero commodo risus tristique bibendum ut in turpis. Nulla lacinia condimentum mauris ac dictum. Cras malesuada nibh finibus orci ultrices scelerisque.</p>
+                <p>We will email you back!</p>
+                <form className='contactForm'>
+                    <h3>Based</h3>
+                    <input type='text'></input>
+                    <h3>Based</h3>
+                    <input type='text'></input>
+                    <h3>Based</h3>
+                    <input type='text'></input>
+                </form>
+                    <div className='checkContainer'>
+                        <h3>Subscribe to the newsletter</h3>
+                        <input type='checkbox'></input>
+                    </div>                    
             </div>
         </main>
 

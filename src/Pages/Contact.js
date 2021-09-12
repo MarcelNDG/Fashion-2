@@ -3,6 +3,8 @@ import React from 'react'
 import TopNav from '../components/TopNav'
 import Footer from '../components/Footer'
 
+import Model from '../img/model.png'
+
 const Contact = () => {
 
     return (
@@ -22,14 +24,17 @@ const Contact = () => {
                     <h3>Based</h3>
                     <input type='text'></input>
                 </form>
-                    <div className='checkContainer'>
-                        <h3>Subscribe to the newsletter</h3>
-                        <input type='checkbox'></input>
-                    </div>                    
+                <div className='checkContainer'>
+                    <h3>Subscribe to the newsletter</h3>
+                    <input type='checkbox'></input>
+                </div>
+                <button>Submit</button>
+
             </div>
         </main>
 
         <Footer />
+            <img className='modelPic' src={Model} alt="Model" />
         </>
     )
 }

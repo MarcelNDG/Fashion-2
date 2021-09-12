@@ -510,7 +510,7 @@ footer{
  
 }
 
-  /* ---------- ABOUT PAGE ----------- */
+  /* ---------- CONTACT PAGE ----------- */
 
   .contactMain{
     background-color: aqua;
@@ -519,6 +519,8 @@ footer{
     justify-content: flex-start;
     height: 100%;
     width: 90vw;
+
+    z-index: 200;
   }
 
   .contactContainer{
@@ -528,6 +530,17 @@ footer{
     background-color: orangered;
     padding-top: 2rem;
     align-items: center;
+  }
+
+  .contactContainer button{
+    cursor: pointer;
+    border: none;
+    font-weight: normal;
+    background-color: rgb(255, 220, 220);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 1.4rem;
+    border-radius: 8px;    
   }
 
   .contactContainer h3{
@@ -541,7 +554,8 @@ footer{
   }
 
   .contactForm input{
-    
+    border-radius: 8px;
+    border: solid 1px #000;
     width: 100%;
   }
 
@@ -946,6 +960,16 @@ footer{
 
   .storeAdressContainer{
     justify-content: space-between;
+  }
+
+  /* ---- CONTACT PAGE ----*/
+
+  .contactMain{
+    align-items: flex-start;
+  }
+
+  .contactContainer{
+    width: 50vw;
   }
 }
 

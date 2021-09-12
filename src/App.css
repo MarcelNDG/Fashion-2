@@ -513,7 +513,7 @@ footer{
   /* ---------- CONTACT PAGE ----------- */
 
   .contactMain{
-    background-color: aqua;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -523,20 +523,31 @@ footer{
     z-index: 200;
   }
 
+  .modelPicContact{
+    position: absolute;  
+    width: 16rem;
+    opacity: 0.2;
+    bottom: -4rem;
+    overflow: hidden;      
+    z-index: 0;  
+  }
+
   .contactContainer{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: orangered;
+   
     padding-top: 2rem;
     align-items: center;
+
+    z-index: 200;
   }
 
   .contactContainer button{
     cursor: pointer;
     border: none;
     font-weight: normal;
-    background-color: rgb(255, 220, 220);
+    background-color: rgb(245, 153, 153);
     margin-top: 1rem;
     font-size: 1.2rem;
     padding: 0.4rem 1.4rem;
@@ -548,13 +559,14 @@ footer{
   }
 
   .contactForm{
-    background-color: orchid;
+   
     text-align: left;
     width: 12rem;
   }
 
   .contactForm input{
     border-radius: 8px;
+    background-color: #fff;
     border: solid 1px #000;
     width: 100%;
   }
@@ -568,6 +580,10 @@ footer{
 
   .checkContainer h3{
     margin: 0;
+  }
+
+  .checkbox{
+    margin-left: 0.6rem;
   }
 
 /* --- MEDIA QUERIES --- */
@@ -970,6 +986,15 @@ footer{
 
   .contactContainer{
     width: 50vw;
+  }
+  .contactForm{
+    width: 14rem;
+  }
+
+  .modelPicContact{
+    right: 0;
+    width: 19rem;
+  opacity: 1;
   }
 }
 

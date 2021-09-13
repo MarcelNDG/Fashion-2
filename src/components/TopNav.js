@@ -77,19 +77,19 @@ const TopNav = () => {
                     <button className='cart'>
                         <Kart />
                     </button> 
-                    <button className='profileBtnText'>Shopping kart</button>
+                    <Link className='profileBtnText' to='/shoppingCart'>Shopping kart</Link>
                 </div>                
                 <div className='cartContainer'>
                     <button className='cart'>
                         <ProfileBtn />
                     </button> 
-                    <button className='profileBtnText'>Profile</button>
+                    <Link className='profileBtnText' to='/profile'>Profile</Link>
                 </div>                
                 <div className='cartContainer'>
                     <button className='cart'>
                         <ConfigBtn />
                     </button> 
-                    <button className='profileBtnText'>Settings</button>
+                    <Link className='profileBtnText' to='/settings'>Settings</Link>
                 </div>                
                     
             </div>

@@ -586,6 +586,81 @@ footer{
     margin-left: 0.6rem;
   }
 
+  /* ---------- CONTACT PAGE ----------- */
+  
+  .cartContainer{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+  }
+
+  .shoppingCart{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    
+    width: 100%;
+    background-color: tomato;
+    border-radius: 8px;
+    padding: 0.8rem;
+  }
+
+  .cartWrap{
+    display: flex;
+    padding-top: 1.6rem;
+  }
+
+  .productIMG{
+    width: 6em;
+    height: 4rem;
+    background-color: yellowgreen;
+  }
+
+  .shoppingCart h2{
+    margin: 0;
+  }
+  
+  .productInfo{
+    width: 50%;
+    text-align: left;    
+  }
+  .productData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .dataContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dataContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dataContainer h4{
+    margin: 0;
+  }
+
+  .cartBtn{
+    position: absolute;
+    cursor: pointer;
+    align-self: center;
+    height: 2.2rem;
+    width: 2.2rem;
+    top: 0.4rem;
+    right: 0.4rem;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+  }
+
 /* --- MEDIA QUERIES --- */
 
  @media (min-width: 320px){

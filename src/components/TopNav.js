@@ -2,6 +2,9 @@ import { ReactComponent as ProfileBtn } from '../icon/usermenu.svg'
 import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
 import { ReactComponent as ConfigBtn } from '../icon/setting-lines.svg'
 
+import { useEffect } from 'react'
+
+
 import { Link } from 'react-router-dom'
 
 import React from 'react'
@@ -17,6 +20,31 @@ import SideMenu from './SideMenu'
 
 
 const TopNav = () => {
+
+    useEffect(() => {
+        const userBtn = document.getElementById('userButton')
+        const profileMenu = document.getElementById('profileMenu')
+        console.log(profileMenu, userBtn);
+    
+        function showMenu() {
+          if(profileMenu.classList.contains('showMenu')){
+            profileMenu.classList.remove('showMenu')
+            console.log('removed');
+          } else{
+            profileMenu.classList.add('showMenu')
+            console.log('added');
+          }
+        }
+    
+        
+    
+        userBtn.addEventListener("click",showMenu)
+    
+        return () => {
+          
+        }
+      }, [])
+
     return(
     <>
         <div className='topNav'>

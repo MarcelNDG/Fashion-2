@@ -5,25 +5,20 @@ const Cart = () => {
         <>
         <div className='shoppingCart'>
             <div className='cartWrap'>            
-            <div className='productInfo'>
-                <h4>Product name</h4>
-                <div className='productIMG'></div>
-            </div>
-                     
-            
-                <div className='dataContainer'>
-                    
+                <div className='productInfo'>
+                    <h4>Product name</h4>
+                    <div className='productIMG'></div>
+                </div>                         
+
+                <div className='dataContainer'>                
                     <h4>100</h4>
                 </div>
-                <div className='dataContainer'>
-                
-                <h4>100</h4>
+                <div className='dataContainer'>            
+                    <h4>100</h4>
                 </div>
-                <div className='dataContainer'>
-                
-                <h4>100</h4>
-                
-            </div>
+                <div className='dataContainer'>            
+                    <h4>100</h4>                
+                </div>
             
             </div>
            

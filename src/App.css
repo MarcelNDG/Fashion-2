@@ -587,6 +587,34 @@ footer{
   }
 
   /* ---------- CART PAGE ----------- */
+
+  .cartCheckoutContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+  }
+
+  .checkoutContainer{
+    height: 6rem;
+    width: 100%;
+    background-color: rgb(255, 178, 123);
+    border-top: solid 2px #000;
+  }
+
+  .checkoutInfo{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .checkoutInfo h3:nth-child(1){
+    font-weight: normal;
+    justify-self: end;
+  }
+
+  .checkout button{
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+  }
   
   .cartContainer{
     height: 100%;
@@ -1138,11 +1166,7 @@ footer{
     display: grid;
     grid-gap: 6rem;
     grid-template-columns: 1fr 1fr;
-    
   }
-
- 
-  
 
   /* -- Season and search -- */
   .seasonSearchContainer{
@@ -1191,8 +1215,6 @@ footer{
   .sphereBig{
     width: 50rem;
     height: 50rem;
-    
-    
     transform: translateY(10rem);
     margin-right: -15rem;
     right: 0;
@@ -1218,12 +1240,31 @@ footer{
   }
 
   /* ---- ABOUT PAGE ----*/
-
+  
   .aboutContainer{
     width: 50vw;
     align-self: flex-start;
   }
   
+  /* ---- CART PAGE ----*/
+
+  .cartCheckoutContainer{
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .cartWrap{
+    width: 60vw;
+  }
+
+ 
+
+  .checkoutContainer{
+    width: 20vw;
+  }
+
 }
 
 

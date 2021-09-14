@@ -494,8 +494,7 @@ footer{
 .itemPrice{
   font-size: 1.6rem;
   font-weight: bold;
-  text-align: right;
-  
+  text-align: right;  
 }
 
 .titleImgContainer{
@@ -558,8 +557,7 @@ footer{
     margin-bottom: 0.4rem;
   }
 
-  .contactForm{
-   
+  .contactForm{   
     text-align: left;
     width: 12rem;
   }
@@ -595,7 +593,7 @@ footer{
   }
 
   .checkoutContainer{
-    height: 6rem;
+    height: 8rem;
     width: 100%;
     background-color: rgb(255, 178, 123);
     border-top: solid 2px #000;
@@ -605,15 +603,22 @@ footer{
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+
   .checkoutInfo h3:nth-child(1){
     font-weight: normal;
     justify-self: end;
   }
 
-  .checkout button{
+  .checkoutContainer button{
     cursor: pointer;
     border: none;
+    font-weight: bold;
+    display: inline-block;
     border-radius: 8px;
+    padding: 0.4rem;
+    margin-top: 0.4rem;
+    background-color: rgb(255, 220, 220);    
+    width: 14rem;
   }
   
   .cartContainer{
@@ -705,14 +710,15 @@ footer{
     cursor: pointer;
     align-self: center;
     background-color: white;
-    border: 3px red solid;
+    background-color: rgb(247, 74, 74);
     font-weight: bolder;
-    color: red;
+    color: #fff;
     height: 2rem;
     width: 2rem;
     top: 0.4rem;
     right: 0.4rem;
     border-radius: 50%;
+    border: none;
   }
 
 /* --- MEDIA QUERIES --- */
@@ -1251,31 +1257,29 @@ footer{
   .cartCheckoutContainer{
     display: grid;
     width: 90vw;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr;    
   }
 
   .cartWrap{
-    width: 60vw;
+    width: 60vw;    
   }
 
- 
+ .productTable{
+   width: 60vw;
+   align-self: flex-start;
+ }
 
   .checkoutContainer{
-    width: 20vw;
+    height: 100%;
+    width: 30vw;
+    border: none;
+    border-left: 2px black solid;
+  }
+
+  .checkoutInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
-
-
-/*
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-*/
-

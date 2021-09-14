@@ -12,7 +12,14 @@ const ShoppingCart = () => {
             <TopNav />    
         </header>
         <main>
-            <h2>Cart</h2>
+            <h2 className='cartTitle'>Cart</h2>
+        <div className='productTable'>
+            <h3>Product </h3>
+            <h3>Price </h3>
+            <h3>Quantity </h3>
+            <h3>Subtotal </h3>            
+        </div>
+           
             <CartContainer />
         </main>
 

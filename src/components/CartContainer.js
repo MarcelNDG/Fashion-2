@@ -5,6 +5,8 @@ const CartContainer = () => {
     return (
         <div className='cartContainer'>
             <Cart />
+            <Cart />
+            <Cart />
             
         </div>
     )

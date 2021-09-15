@@ -348,7 +348,7 @@ main{
 .sphereBig{
   position: absolute;
   display: none;  
-
+  opacity: 0.1;
   z-index: 0; 
 }
 

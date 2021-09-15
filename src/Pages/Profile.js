@@ -24,9 +24,9 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className='profileformContainer'>
-                    <ProfileItem />
-                    <ProfileItem />
-                    <ProfileItem />
+                    <ProfileItem adress={'Avenida Siempreviva #1234'} />
+                    <ProfileItem adress={'Avenida Siempreviva #1234'} />
+                    
                 </div>
 
             </div>

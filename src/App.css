@@ -734,7 +734,7 @@ footer{
     padding: 0.6rem;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     border-radius: 8px;
     width: 100%;
     background-color: rgb(240, 240, 240);
@@ -764,8 +764,9 @@ footer{
   .avatarInfo{
     display: flex;
    width: 70%;
+   margin-left: 0.8rem;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
   }
@@ -796,16 +797,22 @@ footer{
   }
 
   .profileItem button{
-    width: 8rem;
+    cursor: pointer;
+    width: 7rem;
     border: none;
     font-size: 0.8rem;
     border-radius: 8px;
     text-decoration: underline;    
   }
 
-  .inputContainer button{
+  .inputContainer > button{
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    height: 1.4rem;
     width: 5rem;
-   margin-left: 1rem;
+    margin-left: 1rem;
+    background-color:rgb(255, 220, 220)
   }
   
 /* --- MEDIA QUERIES --- */
@@ -1224,9 +1231,19 @@ footer{
   /* ---- CONTACT PAGE ----*/
 
   .cartContainer{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
+
+   /* ---- PROFILE PAGE ----*/
+
+   .profileWrap{
+    max-width: 50vw;
+  }
+
+  
+
+  
 }
 
 @media (min-width: 1080px){
@@ -1372,5 +1389,8 @@ footer{
     justify-content: center;
     align-items: center;
   }
+
+  
+ 
 
 }

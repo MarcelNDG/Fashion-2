@@ -770,27 +770,39 @@ footer{
     text-align: center;
   }
 
-  .formItem{
+  .profileItem{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: left;
-    height: 7rem;    
+    text-align: left;
+    padding: 0.6rem;
+    height: 12rem;    
   }
 
-  .formItem h3{
+  .profileItem h3{
+    margin: 0;
+  }
+  .profileItem h4{
     margin: 0;
   }
 
-  .formItem input{
+  .profileItem input{
     width: 10rem;
     border-radius: 8px;
   }
 
-  .formItem button{
+  .profileItem button{
     width: 8rem;
     border: none;
-
+    font-size: 0.8rem;
     border-radius: 8px;
+    text-decoration: underline;    
+  }
+
+  .inputContainer button{
+    width: 5rem;
+   margin-left: 1rem;
   }
   
 /* --- MEDIA QUERIES --- */

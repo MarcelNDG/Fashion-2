@@ -4,6 +4,7 @@ import { ReactComponent as ProfileBtn } from '../icon/usermenu.svg'
 
 import TopNav from '../components/TopNav'
 import Footer from '../components/Footer'
+import ProfileItem from '../components/ProfileItem'
 
 const Profile = () => {
     return (
@@ -23,14 +24,9 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className='profileformContainer'>
-                    
-                        <div className='formItem'>
-                            <h3>Adress: Avenida siempreviva #1234</h3>
-                            <button>Change adress</button>
-                            <input type='text'></input>
-                        </div>
-                        
-                    
+                    <ProfileItem />
+                    <ProfileItem />
+                    <ProfileItem />
                 </div>
 
             </div>

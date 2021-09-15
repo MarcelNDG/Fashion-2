@@ -5,7 +5,7 @@ const CartContainer = () => {
     return (
         <>
             <div className='cartCheckoutContainer'>
-                <div className='cartContainer'>
+                <div className='ShoppingcartContainer'>
                     <Cart />
                     <Cart />
                     <Cart />

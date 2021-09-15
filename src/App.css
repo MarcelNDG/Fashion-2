@@ -743,7 +743,7 @@ footer{
   .profileformContainer{
    padding-top: 0.6rem;
     width: 100%;
-    background-color: coral;
+    
   }
 
   .profileformContainer h3{
@@ -777,7 +777,10 @@ footer{
     align-items: left;
     text-align: left;
     padding: 0.6rem;
+    margin-top: 0.6rem;
+    border-radius: 8px;
     height: 12rem;    
+    background-color: coral;
   }
 
   .profileItem h3{

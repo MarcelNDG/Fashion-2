@@ -1005,7 +1005,10 @@ footer{
   }
 
   .profileBtnText{
-    margin-left: 0.5rem;
+    font-size: 1rem;
+    margin-left: 0.4rem;
+    text-decoration: none;
+    color: #000;
   }
 
   .cartContainer button:nth-child(1){
@@ -1134,7 +1137,8 @@ footer{
   /* ---- CONTACT PAGE ----*/
 
   .cartContainer{
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
   }
 }
 

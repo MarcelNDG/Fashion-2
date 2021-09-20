@@ -9,41 +9,1436 @@ body{
 }
 
 /* -- APP -- */
-
-
-/* --- TOPNAV --- */
-
-.topNav{
-  display: flex;
-  background-color: aqua;
+.App{
+  display: grid;
+  position: relative;
+  grid-gap: 0.4rem;
+  height: 100vh;
+  width: 100vw;  
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-areas :    
+  "header header" 
+  "main main" 
+  "footer footer";
+  
+  justify-content: center; 
+  
 }
 
-.topNav ul li{
+/* -- TOPNAV -- */
+
+
+  /* -- Mobile menu BTN -- */
+
+  .btnContainer{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    width: 90vw;
+    height: 4rem;
+     
+    
+    z-index: 101;
+  }
+
+  .btnContainer button{
+    cursor: pointer;
+  }
+
+  .hmbgIcon{
+    padding: 0 0 0 0;
+    width: 3rem;
+    right: 0;
+  }
+
+  /* -- Mobile menu  -- */    
+  .sideMenu{     
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    
+    z-index: 10;
+  }
+  
+  
+  /* -- Side profile menu  -- */    
+ .sideProfile{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 0.4rem;
+   width: 100%;
+   height: 18vh;   
+   margin-top: 10vh;
+   padding: 1rem;
+ }
+ 
+ .profileIconMobile{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   background-color: rgb(236, 236, 236);
+   border-radius: 8px;
+ }
+
+ .profileIconMobile h3{
+   font-weight: normal;
+   margin-left: 0.4rem;
+ }
+
+ .userButtonMobile{
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+  padding: 0;
+ }
+
+ .settingsButtonMobile{
+  width: 10rem;
+  height: 10rem;
+  color: #000;
+  padding: 0;
+ }
+
+ 
+
+ /* -- Side content main menu --*/
+ .sideContent{
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 90vh;
+  width: 100vw;
+  padding-bottom: 12vh;   
+  
+  padding-left: 4vw;
+}
+
+.sideContent button{
+  text-align: center;
+}
+
+.sideBtn{
+ text-decoration: none;
+ font-weight: lighter;
+ font-family: 'Roboto Condensed', sans-serif;
+ border-bottom: solid rgb(199, 199, 199) 1px;
+ 
+ font-size: 2rem;
+}
+
+
+
+ .noMenu{
+   display: none;
+ }
+
+ .showMenu{
+   display: flex;
+ }
+
+/* -- Profile menu --*/
+
+.profileMenu{
+  display: none;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  grid-area: header;
+  justify-content: space-between;
+  width: 90vw;  
+
+  z-index: 11;
+}
+
+header button{
+  background-color: transparent;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.topLogo{
+  font-weight: lighter;
   list-style: none;
+  text-decoration: none;
+  font-size: 4vw;
+  margin-right: auto;
+
+  z-index: 102;  
+}
+
+.topLogo span{
+  font-weight: bold;
 }
 
 .navLink{
-  list-style: none;
-  text-decoration: none;
-}
-
-.btnList{
-  display: flex;
-}
-
-/* ---- PROFILE ---- */
-
-.cartContainer button{
   background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
   border: none;
+  cursor: pointer;
+  font-weight: lighter;
+  font-family: 'Roboto Condensed';
+  font-size: 1.4rem;
+  margin-left: 2.6rem;
 }
+
+.topNav{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  height: 4rem; 
+  padding: 0;
+  width: 100vw; 
+}
+
+.topNavContainer{
+  display: flex;
+  width: 100%;  
+}
+
+.topNavContainer ul {
+  display: none;  
+}
+
+.navLink{
+  position: relative;  
+}
+
+.exclamation{
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  color: rgb(255, 0, 0);
+  font-size: 2rem; 
+  font-weight: bolder;
+  transform: translateY(-0.3rem);
+}
+
+.sideBtn p{
+ font-size: 2.6rem;
+ transform: translateY(-0.4rem)
+}
+
+
+
+/* -- Account -- */
 
 .profileIcon{
-  width: 2rem;  
+  display: none;  
 }
 
-@media only screen and (orientation: landscape) {
-  body {
-    background-color: lightblue;
+.accountContainer{
+  display: none;
+}
+
+/*-- Main --*/
+main{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  
+  grid-area: main;
+}
+
+.logo{  
+  text-align: left;
+  font-weight: lighter;
+  font-size: 14vw;
+  line-height: 0.9;
+  bottom: 4.6rem;
+  z-index: 10;    
+}
+
+.logo span{
+  font-weight: 800;
+}
+
+.seasonSearchContainer{
+  display: flex;  
+  bottom: 8rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.seasonMenu{
+  display: flex;
+  justify-content: center;
+}
+
+.seasonMenu  ul {
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  list-style: none;
+  background-color: transparent;
+  padding: 0;
+
+  bottom: 9rem;
+
+  z-index: 10;
+}
+
+.seasonMenu  ul  button{  
+  font-size: 1.4rem;
+  line-height: 1.8rem;  
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;  
+}
+
+.searchbar{  
+  border: black 1px solid;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 14rem;
+  height: 2.6rem;
+  opacity: 1;
+  padding: 0.3rem 0.4rem;
+  bottom: 6.4rem;
+
+  z-index: 10;
+}
+
+/* --- Image --- */
+.image-container{
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  bottom:0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.modelPic{
+  position: absolute;  
+  width: 12rem;
+  opacity: 0.4;
+  bottom: 0;
+    
+  z-index: 0;  
+}
+
+
+/* -- Background and effects -- */
+.sphereBig{
+  position: absolute;
+  display: none;  
+  opacity: 0.1;
+  z-index: 0;
+  transform: translateX(5rem); 
+}
+
+/*-- footer --*/
+footer{
+  grid-area: footer;
+  z-index: 2;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- ABOUT PAGE ----------- */
+
+.aboutMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90vw;
+}
+
+.aboutMain h2{
+  margin-top: 3vh;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.signature{
+  width: 10rem;
+}
+
+/* ---------- STORES PAGE ----------- */
+.storeMain{
+  width: 90vw;
+  height: fit-content;
+  justify-content: center;
+}
+
+.storeList{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgba(128, 255, 0, 0.226); */
+}
+
+.storeListContainer{
+  display: grid;
+  grid-gap: 0.4rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.store{
+  height: 24rem;
+  width: 100%;
+  padding: 1rem;
+  /*  background-color: rgba(128, 255, 0, 0.541); */
+  
+}
+
+.storeAdressContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.store h3{
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+  font-weight: normal;
+  text-align: left;
+  
+}
+.store h4{
+  margin: 0.3rem 0;
+}
+
+.store p{
+  text-align: left;
+}
+
+.storeMapBtn{
+  cursor: pointer;
+  background-color: rgb(255, 220, 220);
+  display: inline-block;
+  border: none;
+  padding: 0.4rem;
+  margin-top: 0.4rem;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 14rem;
+}
+
+.storeImgPLaceholder{
+  width: 100%;
+  height: 10rem;
+  margin-top: 0.6rem;
+  background-color: chocolate;
+}
+
+/* ---------- SALE PAGE ----------- */
+
+.saleItemSection{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  /* background-color: rgb(57, 212, 233); */
+  height: 100%;
+  width: 90vw;    
+}
+
+.saleItemContainer{
+  border: 1px #000 solid;
+  border-radius: 6px;
+  width: 90vw;
+  margin-bottom: 0.6rem;
+  padding: 1rem 1rem 0.8rem 1rem ;
+  
+}
+
+.saleItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.saleItem p {
+  margin: 1rem 0 0.6rem 0;
+}
+
+.saleItemImg{
+  background-color: royalblue;
+  width: 10rem;
+  height: 6rem;
+}
+
+.itemPrice{
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: right;  
+}
+
+.titleImgContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.titleImgContainer > h2{
+  margin: 0 0 0.8rem 0;
+ 
+}
+
+  /* ---------- CONTACT PAGE ----------- */
+
+  .contactMain{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 90vw;
+
+    z-index: 10;
+  }
+
+  .modelPicContact{
+    position: absolute;  
+    width: 16rem;
+    opacity: 0.2;
+    bottom: -4rem;
+    overflow: hidden;      
+    z-index: 0;  
+  }
+
+  .contactContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    padding-top: 2rem;
+    align-items: center;
+
+    z-index: 200;
+  }
+
+  .contactContainer button{
+    cursor: pointer;
+    border: none;
+    font-weight: normal;
+    background-color: rgb(245, 153, 153);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 1.4rem;
+    border-radius: 8px;    
+  }
+
+  .contactContainer h3{
+    margin-bottom: 0.4rem;
+  }
+
+  .contactForm{   
+    text-align: left;
+    width: 12rem;
+  }
+
+  .contactForm input{
+    border-radius: 8px;
+    background-color: #fff;
+    border: solid 1px #000;
+    width: 100%;
+  }
+
+  .checkContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .checkContainer h3{
+    margin: 0;
+  }
+
+  .checkbox{
+    margin-left: 0.6rem;
+  }
+
+  /* ---------- CART PAGE ----------- */
+
+  .cartCheckoutContainer{
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .checkoutContainer{
+    height: 8rem;
+    width: 100%;
+   
+    border-top: solid 2px #000;
+  }
+
+  .checkoutInfo{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .checkoutInfo h3:nth-child(1){
+    font-weight: normal;
+    justify-self: end;
+  }
+
+  .checkoutContainer button{
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 0.4rem;
+    margin-top: 0.4rem;
+    background-color: rgb(255, 220, 220);    
+    width: 14rem;
+  }
+  
+  .cartContainer{
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .cartTitle{
+    margin-bottom: 0;
+  }
+
+  .productTable{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr 0.4fr;
+    flex-direction: row;
+    width: 90vw;    
+  }
+
+  .productTable h3{
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+
+  .shoppingCart{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    height: 10rem;     
+    width: 100%;
+    margin-top: 0.6rem;
+    border-radius: 8px;   
+  }
+
+  .shoppingCart h2{
+    margin: 0;
+  }
+
+  .cartWrap{
+    display: grid;
+    height: 6rem;
+    width: 90vw;    
+    grid-template-columns: 1.6fr 1fr 1fr 1fr 0.4fr;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .productInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 0.4rem;
+  }
+
+  .productInfo h4{
+    margin: 0;
+  }
+  
+  .productIMG{
+    width: 80%;
+    height: 4rem;
+    background-color: yellowgreen;
+  }
+  
+  .productData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  .dataContainer{
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+  }
+
+  .dataContainer h4{
+    margin: 0;
+  }
+
+  .cartBtn{
+    position: absolute;
+    cursor: pointer;
+    align-self: center;
+    background-color: white;
+    background-color: rgb(247, 74, 74);
+    font-weight: bolder;
+    color: #fff;
+    height: 2rem;
+    width: 2rem;
+    top: 0.4rem;
+    right: 0.4rem;
+    border-radius: 50%;
+    border: none;
+  }
+
+  /* ---- PROFILE PAGE ---- */
+
+  .profileWrap{
+    
+    width: 100%;
+   }
+
+  .avatarContainer{
+    display: flex;
+    padding: 0.6rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    border-radius: 8px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+  }
+
+  .profileformContainer{
+   padding-top: 0.6rem;
+    width: 100%;
+    
+  }
+
+  .profileformContainer h3{
+    margin-top: 0;
+  }
+
+  .avatarContainer h3{
+    margin-bottom: 0;
+  }
+
+  .profileAvatar{
+    width: 4.8rem;
+    background-color: rgb(255, 202, 183);
+    padding: 0.6rem;
+    border-radius: 50%;
+  }
+
+  .avatarInfo{
+    display: flex;
+   width: 70%;
+   margin-left: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profileItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    text-align: left;
+    padding: 0.6rem;
+    margin-top: 0.6rem;
+    border-radius: 8px;
+    height: 12rem;    
+    background-color: rgb(238, 238, 238);
+  }
+
+  .profileItem h3{
+    margin: 0;
+  }
+  .profileItem h4{
+    margin: 0;
+  }
+
+  .profileItem input{
+    width: 10rem;
+    border-radius: 8px;
+  }
+
+  .profileItem button{
+    cursor: pointer;
+    width: 7rem;
+    border: none;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    text-decoration: underline;    
+  }
+
+  .inputContainer > button{
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    height: 1.4rem;
+    width: 5rem;
+    margin-left: 1rem;
+    background-color:rgb(255, 220, 220)
+  }
+
+  
+  @media (orientation: landscape){
+    .logo{
+      font-size: 8vw;
+    }
+
+   
+  }
+  
+ @media (min-width: 320px){
+
+  .App{
+    
+    overflow-x: hidden; 
+  }
+
+  /* --- Main --- */
+  .logo{
+    font-size: 16vw;
+  }
+
+  /* --- Image --- */
+  .modelPic{
+    width: 18rem;
+    margin-left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+/* ---------- ABOUT PAGE ----------- */
+
+  .aboutMain{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90vw;
+
+    z-index: 10;
+  }
+
+  .aboutMain h2{
+    margin-top: 3vh;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+
+  .signature{
+    width: 11rem;
   }
 }
+
+@media (min-width: 320px) and (orientation: landscape){
+  .logo{
+    font-size: 8vw;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo{
+    margin: 0;
+    margin-bottom: 0;
+    font-size: 10vw;
+  }
+  .seasonSearchContainer{
+    
+  }
+
+  .footer{
+    height: 10vh;
+  }
+
+}
+
+
+@media (min-width: 480px){
+
+  /* -- Side Menu -- */
+
+  .profileIconMobile h3{
+    font-size: 1.2rem;
+  }
+
+  .userButtonMobile{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  
+  /* --- Main --- */
+  main{
+    display: flex;   
+    position: relative; 
+    grid-area: main;
+    
+  } 
+  
+  .logo{  
+    text-align: left;
+    font-weight: lighter;
+    bottom: 16rem;
+    font-size: 4.2rem;
+    line-height: 0.9;
+    
+    z-index: 10; 
+  }
+  
+    
+  .logo span{
+    font-weight: 800;
+  }
+  
+  /* --- Image --- */
+  .image-container{
+    z-index: 0;
+  }
+
+  .modelPic{
+    position: absolute;
+    right: 2rem;
+    width: 20rem;
+    opacity: 0.4;  
+    bottom: 0;
+  
+    z-index: 0;  
+  }
+
+  /* --- Season Menu --- */
+  .seasonMenu  ul{
+    bottom: 10.6rem;
+  }
+
+  .saleItemSection{
+  
+    justify-content: center;
+    justify-items: center; 
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.6rem;
+    
+    height: 100%;
+    width: 90vw;
+  }
+
+  .saleItemContainer{
+    width: 100%;
+    align-self: center;
+  }
+
+  /* ---- ABOUT PAGE ----*/
+
+  .signature{
+    margin-top: 8vh;
+    width: 18rem;
+    align-self: flex-start;    
+  }
+
+  .aboutContainer{
+    width: 70vw;
+    
+  }
+}
+
+@media (min-width: 480px) and (orientation: landscape){
+  .logo{
+    font-size: 7vw;
+  }
+
+  .modelPic{
+    width: 8rem;
+  }
+}
+
+
+@media (min-width: 720px){
+
+  /* -- Side Menu -- */
+
+  .sideMenu{ 
+    display: none;
+  }
+
+  .storeContainer{
+    display: grid;
+    grid-template-columns: 1fr;    
+  }
+
+  .storeListContainer{
+    padding: 4rem 3vw;
+  }
+  
+
+  /* --- Topnav --- */
+  .hmbgIcon{
+    display: none;
+  }
+  
+  .topNav{
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topNavContainer{
+    align-items: center;    
+    margin: 0;    
+  }
+
+  .topNavContainer > ul{
+    display: flex;
+    list-style: none;
+  }
+
+  
+  .topNavContainer > button{
+    display: none;
+  }
+
+  .btnList{
+    padding: 0;
+    z-index: 200;
+  }
+
+  .navLink{
+    font-size: 1.5rem;
+    margin-left: 1;
+  }
+
+  /* -- Account -- */
+
+  .profileMenu{
+    position: absolute;
+    height: 11rem;
+    width: 9.3rem;
+    right: 0;
+    transform: translate(2.3rem, 7rem);
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .accountContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: solid 1px #00000065;
+
+    z-index: 200;
+  }
+
+  .accountContainer h3{
+    margin: 0 0 0 0.4rem;
+    font-weight: lighter;
+  }
+  .accountContainer h3 span{
+    
+    font-weight: normal;
+  }
+
+  .profileIcon{
+    display: block;
+    width: 3rem;
+    height: 3rem;    
+    border-radius: 50%;
+    
+    color: #000;
+  }
+
+  .userButton{
+    
+    width: 3rem;
+    height: 3rem;
+    color: #000;
+    padding: 0;
+  }
+
+  /* ---- Account Profile Menu ---- */
+
+  .profileMenu{
+    display: none;
+    flex-direction: column;
+    padding: 0.6rem 0.2rem;
+    
+  }
+
+  .profileMenu button{
+    padding: 0.4rem 0rem;
+    height: 3rem;
+  }
+
+  .profileMenu button:hover {
+    font-weight: bolder;
+  }
+
+  .profileMenu > button:nth-child(2),button:nth-child(3){
+    text-align: left;
+    padding: 0.2rem 0.4rem;
+  }
+
+
+  /* -- Profile menu button -- */
+
+  .showMenu{
+    display: flex;
+  }
+
+  .cartContainer{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0.2rem 0.6rem 0.2rem 0.4rem;
+    
+  }
+
+  .profileBtnText{
+    font-size: 1rem;
+    margin-left: 0.4rem;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .cartContainer button:nth-child(1){
+    font-weight: normal;
+    
+  }
+  .cartContainer button:nth-child(1):hover{
+    font-weight: bolder;
+  }
+
+  .cart{
+    color: black;
+    width: 1.6rem;
+  }
+
+  
+  /* -- Image -- */
+  .image-container{
+    position: absolute;
+    height: 100vh;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .btnList > li{
+    cursor: pointer;
+  }
+  
+  /* --- Main --- */
+  .logo{
+    left: 4rem;
+    font-size: 5rem;
+  }
+  
+  .seasonSearchContainer{
+    justify-content: left;
+    width: 40rem;
+    left: 4rem;
+    flex-direction: row;
+  }
+  
+  /* -- Season menu -- */
+  .seasonMenu{
+    margin-right: 2rem;
+  }
+
+  .searchbar{
+    border-radius: 20px;
+    outline: none;   
+    font-size: 1.4rem; 
+  }
+  
+
+  /* --- Image --- */
+  .modelPic{  
+    width: 20rem;  
+    opacity: 1;
+  }
+
+  /* --- BAckground and effects --- */
+  .sphereBig{
+    display: block;
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    background-color: bisque;
+   
+    z-index: 0;
+  }
+  
+  /* ---- ABOUT PAGE ----*/
+  
+  .aboutMain{
+    align-items: flex-start;
+  }
+  .aboutMain h2{
+    text-align: center;
+  }
+  .aboutContainer{
+    display: flex;
+    width: 30rem;
+    flex-direction: column;
+    align-items: left;    
+  }
+
+  .signature{
+    align-self: center;
+  }
+  
+  /* ---- STORES PAGE ----*/
+  .store{
+    padding: 0;
+  }
+
+  .storeContainer{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .storeAdressContainer{
+    justify-content: space-between;
+  }
+
+  /* ---- CONTACT PAGE ----*/
+
+  .contactMain{
+    align-items: flex-start;
+  }
+
+  .contactContainer{
+    width: 50vw;
+  }
+  .contactForm{
+    width: 14rem;
+  }
+
+  .modelPicContact{
+    right: 0;
+    width: 19rem;
+  opacity: 1;
+  }
+
+  /* ---- CONTACT PAGE ----*/
+
+  .cartContainer{
+    flex-direction: row;
+    align-items: center;
+  }
+
+   /* ---- PROFILE PAGE ----*/
+   
+  .profileWrap{
+    max-width: 50vw;
+  } 
+  
+}
+
+@media (min-width: 720px) and (orientation: landscape){
+  .logo{
+    background-color: tomato;
+  }
+}
+
+@media (min-width: 1080px){
+
+  .App{
+    width: 100vw;
+  }
+
+  /* --- Topnav --- */
+  
+
+  /* -- Account -- */ 
+  
+
+  /* -- Main -- */
+
+  main{
+    justify-content: left;
+  }
+
+  .logo{
+    
+    font-size: 9rem;
+    bottom: 9rem;
+  }  
+
+  /* -- Store -- */
+
+  .storeListContainer{
+    padding: 2rem 6rem;
+  }
+  
+  .storeContainer{
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* -- Season and search -- */
+  .seasonSearchContainer{
+    width: 40rem;
+    bottom: 5rem;
+    justify-content: space-around;
+  }
+  
+  .seasonMenu  ul {
+    width: 16rem;    
+  }
+  
+  .seasonMenu  ul  button{
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  
+  .seasonMenu  ul  button:hover{
+    font-weight: bold;    
+  } 
+  
+  .searchbar{      
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px #000 solid;
+    background-color: transparent;
+    border-left: none;
+    width: 24rem;
+    height: 2.6rem;
+    padding: 0.3rem 0.4rem;
+    bottom: 6.4rem;
+    border-radius: 0px;
+    opacity: 1;
+    z-index: 10;
+  }
+  
+  /* --- Image --- */
+  .modelPic{  
+    width: 20rem;
+    right: 7rem;  
+    opacity: 1;
+  }
+  
+  /* --- Background and effects --- */
+  .sphereBig{
+    width: 50rem;
+    height: 50rem;
+    transform: translateY(10rem);
+    margin-right: -15rem;
+    right: 0;
+    
+    z-index: 0;
+  }
+  
+  /* -- SALE PAGE -- */
+
+  .saleItemSection{  
+    justify-content: center;
+    justify-items: center; 
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.6rem;
+    
+    height: 100%;
+    width: 90vw;
+  }
+
+  .saleItemContainer{
+    width: 30vw;
+  }
+
+  /* ---- ABOUT PAGE ----*/
+  
+  .aboutContainer{
+    width: 50vw;
+    align-self: flex-start;
+  }
+  
+  /* ---- CART PAGE ----*/
+
+  .cartCheckoutContainer{
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;    
+  }
+
+    
+  .ShoppingcartContainer{
+    padding-right: 1rem;
+  }
+  
+  .cartWrap{
+    width: 60vw;    
+  }
+
+ .productTable{
+   width: 60vw;
+   align-self: flex-start;
+ }
+
+  .checkoutContainer{
+    height: 100%;
+    width: 30vw;
+    border: none;
+    border-left: 2px black solid;
+  }
+
+  .checkoutInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1080px) and (orientation: landscape){
+  .logo{
+    background-color: tomato;
+  }
+}
+
+  

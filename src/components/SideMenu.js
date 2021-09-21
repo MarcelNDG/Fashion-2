@@ -7,7 +7,7 @@ import Exclamation from './Exclamation'
 
 import { ReactComponent as ProfileBtn } from '../icon/usermenu.svg'
 import { ReactComponent as Kart } from '../icon/shopping-cart.svg'
-import { ReactComponent as ConfigBtn } from '../icon/setting-lines.svg'
+// import { ReactComponent as ConfigBtn } from '../icon/setting-lines.svg'
 
 const SideMenu = () => {
     return (
@@ -29,12 +29,7 @@ const SideMenu = () => {
                             <span>Kart</span>
                         </h3>
                 </div>
-                <div className='profileIconMobile'>
-                    <button className='userButtonMobile'>
-                        <ConfigBtn />
-                    </button>
-                        <h3>Profile</h3>
-                </div>
+               
             </div>
 
                            
@@ -48,9 +43,7 @@ const SideMenu = () => {
                 <button>
                     <Link to='/Stores' className='sideBtn'>Stores</Link>
                     </button> 
-                <button>
-                    <Link to='/Contact' className='sideBtn'>Contact</Link>
-                </button> 
+               
             </div>
         </div>
         </>

@@ -61,7 +61,7 @@ const TopNav = () => {
                     <Link to='/stores' className='navLink'>Stores</Link>
                     </li>
                     <li>
-                        <Link to='/contact' className='navLink'>Contact</Link>
+                         <Link to='/contact' className='navLink'>Contact</Link>
                     </li>
                 </ul>
                 <MenuBtn /> 
@@ -75,19 +75,19 @@ const TopNav = () => {
             <div className='profileMenu noMenu' id='profileMenu'>                
                 <div className='cartContainer'>
                     <button className='cart'>
-                        <Kart  className='profileIcon' />
+                        <Kart   />
                     </button> 
                     <Link className='profileBtnText' to='/shoppingCart'>Shopping kart</Link>
                 </div>                
                 <div className='cartContainer'>
                     <button className='cart'>
-                        <ProfileBtn  className='profileIcon'/>
+                        <ProfileBtn  />
                     </button> 
                     <Link className='profileBtnText' to='/profile'>Profile</Link>
                 </div>                
                 <div className='cartContainer'>
                     <button className='cart'>
-                        <ConfigBtn  className='profileIcon'/>
+                        <ConfigBtn  />
                     </button> 
                     <Link className='profileBtnText' to='/settings'>Settings</Link>
                 </div>                

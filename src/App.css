@@ -1494,9 +1494,7 @@ footer{
 }
 
 @media (min-width: 1080px) and (orientation: landscape){
-  .logo{
-    background-color: tomato;
-  }
+ 
 }
 
   
